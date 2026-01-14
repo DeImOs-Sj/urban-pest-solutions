@@ -39,11 +39,11 @@ const Header = () => {
           </a>
           <div className="flex items-center space-x-6">
             <a
-              href="tel:8080839934"
+              href="tel:7620081685"
               className="flex items-center hover:text-primary-200 transition-colors"
             >
               <FaPhone className="mr-2" />
-              8080839934
+              7620081685
             </a>
             <span className="opacity-50">|</span>
             <a href="tel:9529628158" className="hover:text-primary-200 transition-colors">
@@ -126,11 +126,11 @@ const Header = () => {
 
               <div className="px-4 pt-4 border-t border-primary-100 space-y-3 mt-2">
                 <a
-                  href="tel:8080839934"
+                  href="tel:7620081685"
                   className="flex items-center text-primary-800 font-medium"
                 >
                   <FaPhone className="mr-3" />
-                  8080839934
+                  7620081685
                 </a>
                 <a
                   href="mailto:info@samartha7pestcontrol.co.in"

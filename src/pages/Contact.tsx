@@ -40,7 +40,7 @@ const Contact = () => {
         {
             icon: <FaPhone className="text-3xl" />,
             title: 'Phone Numbers',
-            details: '8080839934 / 9529628158',
+            details: '7620081685 / 9529628158',
             gradient: 'bg-primary-800',
         },
         {
@@ -229,11 +229,11 @@ const Contact = () => {
                     </p>
                     <div className="flex flex-col sm:flex-row gap-6 justify-center">
                         <a
-                            href="tel:8080839934"
+                            href="tel:7620081685"
                             className="btn-secondary bg-white text-primary-900 hover:bg-primary-50 border-none text-xl px-10 py-5 inline-flex items-center justify-center space-x-3"
                         >
                             <FaPhone />
-                            <span>8080839934</span>
+                            <span>7620081685</span>
                         </a>
                         <a
                             href="tel:9529628158"
