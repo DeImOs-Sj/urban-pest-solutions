@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { FaPlay, FaImage, FaTimes } from 'react-icons/fa';
+import SEO from '../components/SEO';
 
 const Gallery = () => {
     const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -19,6 +20,11 @@ const Gallery = () => {
 
     return (
         <div className="min-h-screen bg-[#FDFCF9]">
+            <SEO
+                title="Service Gallery | Shree Swami Samartha Pest Control"
+                description="View our gallery of pest control and fogging services in Pune. See our expert team in action and the quality results we deliver to our clients."
+                keywords="pest control gallery, fogging service photos, pest control videos, shree swami samartha projects"
+            />
             {/* Hero Section */}
             <section className="relative py-24 bg-primary-900 text-white overflow-hidden">
                 <div className="relative container mx-auto px-4 text-center">

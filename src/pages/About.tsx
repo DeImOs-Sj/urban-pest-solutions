@@ -1,4 +1,5 @@
 import { FaAward, FaUsers, FaHandshake, FaShieldAlt } from 'react-icons/fa';
+import SEO from '../components/SEO';
 
 const About = () => {
     const values = [
@@ -30,6 +31,11 @@ const About = () => {
 
     return (
         <div className="min-h-screen bg-[#FDFCF9]">
+            <SEO
+                title="About Us | Shree Swami Samartha Pest Control Pune"
+                description="Learn about Shree Swami Samartha Pest Control, founded by Rohini Gaikwad and Ravindra Bagal. We provide expert pest control services in Pune with over 20 years of business experience."
+                keywords="about shree swami samartha pest control, pest control experts pune, rohini gaikwad, ravindra bagal, pest control company pune"
+            />
             {/* Hero Section */}
             <section className="relative py-24 bg-primary-900 text-white overflow-hidden">
                 <div className="relative container mx-auto px-4 text-center">

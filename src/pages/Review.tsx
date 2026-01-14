@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { FaStar, FaUser, FaQuoteLeft } from 'react-icons/fa';
+import SEO from '../components/SEO';
 
 const Review = () => {
     const [formData, setFormData] = useState({
@@ -80,6 +81,11 @@ const Review = () => {
 
     return (
         <div className="min-h-screen bg-[#FDFCF9]">
+            <SEO
+                title="Customer Reviews | Shree Swami Samartha Pest Control"
+                description="Read reviews from our satisfied customers in Pune. See why Shree Swami Samartha Pest Control is the top choice for residential and commercial pest management."
+                keywords="pest control reviews pune, customer testimonials, best pest control feedback, shree swami samartha reviews"
+            />
             {/* Hero Section */}
             <section className="relative py-24 bg-primary-900 text-white overflow-hidden">
                 <div className="relative container mx-auto px-4 text-center">

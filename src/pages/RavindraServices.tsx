@@ -1,4 +1,5 @@
 import { FaBuilding, FaStar } from 'react-icons/fa';
+import SEO from '../components/SEO';
 
 const RavindraServices = () => {
     const clients = [
@@ -58,6 +59,11 @@ const RavindraServices = () => {
 
     return (
         <div className="min-h-screen bg-[#FDFCF9]">
+            <SEO
+                title="Services by Ravindra Bagal | Trusted Pest Control Expert"
+                description="Explore the professional pest control services rendered by Ravindra Bagal. Trusted by Capgemini, Sheraton Hotel, Barclays, and more for quality pest management in Pune."
+                keywords="ravindra bagal pest control, professional pest control pune, corporate pest control pune, residential pest control experts"
+            />
             {/* Hero Section */}
             <section className="relative py-24 bg-primary-900 text-white overflow-hidden">
                 <div className="relative container mx-auto px-4 text-center">

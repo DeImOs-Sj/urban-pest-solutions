@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaClock, FaPaperPlane } from 'react-icons/fa';
+import SEO from '../components/SEO';
 
 const Contact = () => {
     const [formData, setFormData] = useState({
@@ -59,6 +60,11 @@ const Contact = () => {
 
     return (
         <div className="min-h-screen bg-[#FDFCF9]">
+            <SEO
+                title="Contact Us | Hire Best Pest Control in Pune"
+                description="Get in touch with Shree Swami Samartha Pest Control for a free quote. We provide reliable pest control services in Pune. Call us at 7620081685 or visit our office in Mundhwa."
+                keywords="contact pest control pune, pest control quote pune, shree swami samartha contact, pest control mundhwa, hire pest control pune"
+            />
             {/* Hero Section */}
             <section className="relative py-24 bg-primary-900 text-white overflow-hidden">
                 <div className="relative container mx-auto px-4 text-center">

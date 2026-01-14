@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
+import SEO from '../components/SEO';
 
 const PestControlDetails = () => {
     const { hash } = useLocation();
@@ -70,6 +71,11 @@ const PestControlDetails = () => {
 
     return (
         <div className="min-h-screen bg-[#FDFCF9]">
+            <SEO
+                title="Pest Control Details | Learn About Pests & Treatments"
+                description="Detailed information about various pests like cockroaches, ants, bed bugs, termites, and more. Learn about their life cycles and how Shree Swami Samartha Pest Control manages them."
+                keywords="cockroach facts, ant life cycle, bed bug behavior, termite damage, mosquito diseases, pest control information pune"
+            />
             <section className="relative py-24 bg-primary-900 text-white overflow-hidden">
                 <div className="relative container mx-auto px-4 text-center">
                     <h1 className="text-5xl md:text-7xl font-extrabold mb-6 tracking-tight">Pest Control Services</h1>

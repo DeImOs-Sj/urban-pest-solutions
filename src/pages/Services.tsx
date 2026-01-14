@@ -1,6 +1,7 @@
 import { FaCheckCircle } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import ServiceHistory from '../components/ServiceHistory';
+import SEO from '../components/SEO';
 
 const Services = () => {
     const mainServices = [
@@ -199,6 +200,11 @@ const Services = () => {
 
     return (
         <div className="min-h-screen bg-[#FDFCF9]">
+            <SEO
+                title="Pest Control Services Pune | Termite, Cockroach, Bed Bug Control"
+                description="Comprehensive pest control services in Pune. We offer termite management, cockroach control, bed bug treatment, rodent control, and professional fogging services."
+                keywords="pest control services pune, termite treatment, cockroach control, bed bug treatment, rodent management, fogging services, lizard control, mosquito control pune"
+            />
             {/* Hero Section */}
             <section className="relative py-24 bg-primary-900 text-white overflow-hidden">
                 <div className="relative container mx-auto px-4 text-center">

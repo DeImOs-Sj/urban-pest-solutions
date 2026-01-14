@@ -2,6 +2,7 @@ import { FaCheckCircle, FaStar } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import Carousel from "../components/Carousel";
 import ServiceHistory from "../components/ServiceHistory";
+import SEO from "../components/SEO";
 
 const Home = () => {
   const services = [
@@ -104,6 +105,11 @@ const Home = () => {
 
   return (
     <div className="min-h-screen bg-[#FDFCF9]">
+      <SEO
+        title="Best Pest Control Services in Pune | Residential & Commercial"
+        description="Shree Swami Samartha Pest Control offers professional pest control services in Pune. We specialize in cockroach, termite, bed bug, and rodent control for homes and businesses."
+        keywords="pest control pune, best pest control in pune, termite treatment pune, cockroach control pune, bed bug treatment, rodent control, fogging services pune, residential pest control, commercial pest control pune"
+      />
       {/* Hero Section with Carousel */}
       <section className="container mx-auto px-4 pt-8 pb-12">
         <div className="text-center mb-10">
