@@ -204,7 +204,7 @@ const Services = () => {
                 <div className="relative container mx-auto px-4 text-center">
                     <h1 className="text-6xl md:text-7xl font-extrabold mb-6 tracking-tight">Our Services</h1>
                     <p className="text-2xl md:text-3xl max-w-4xl mx-auto font-medium text-primary-100">
-                        Comprehensive pest control and cleaning services tailored to your needs
+                        Comprehensive pest control services tailored to your needs
                     </p>
                 </div>
             </section>

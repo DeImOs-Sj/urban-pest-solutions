@@ -11,7 +11,6 @@ const ServiceHistory = () => {
         "Ant Cockroach Control : Nyati Elan, Pune",
         "Cockroach Control : Bramha Suncity, Pune",
         "Rodent, Pest Control : Seasons 24 Banquet Hall, Wagholi, Pune",
-        "Cleaning Service"
     ];
 
     return (

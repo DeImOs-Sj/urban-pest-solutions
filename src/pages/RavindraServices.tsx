@@ -163,7 +163,7 @@ const RavindraServices = () => {
                             Thanks for giving us an opportunity to serve you
                         </h2>
                         <p className="text-2xl text-primary-200 mb-10 font-medium leading-relaxed">
-                            We are grateful for the trust placed in us by our esteemed clients. Your satisfaction drives us to continually improve and deliver the best pest control and cleaning services.
+                            We are grateful for the trust placed in us by our esteemed clients. Your satisfaction drives us to continually improve and deliver the best pest control services.
                         </p>
                         <div className="inline-block bg-white/10 backdrop-blur-lg rounded-2xl px-10 py-6 border border-white/20">
                             <p className="text-3xl font-bold">Quality & Assured Services</p>

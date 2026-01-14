@@ -21,7 +21,7 @@ const Review = () => {
         {
             name: 'Rajesh Patel',
             rating: 5,
-            review: 'Very satisfied with the cleaning service. They were punctual and did an amazing job. Highly recommended!',
+            review: 'Very satisfied with the peset control service. They were punctual and did an amazing job. Highly recommended!',
             date: '1 month ago',
         },
         {

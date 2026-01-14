@@ -12,7 +12,7 @@ const Footer = () => {
                             SHREE SWAMI SAMARTHA
                         </h3>
                         <p className="text-primary-200 mb-6 leading-relaxed font-medium">
-                            Pest Control & Cleaning Services - Your trusted partner for a cleaner, pest-free environment.
+                            Pest Control Services - Your trusted partner for pest-free environment.
                         </p>
                         <div className="flex space-x-4">
                             <a href="#" className="w-10 h-10 rounded-full bg-primary-900 hover:bg-white hover:text-primary-900 flex items-center justify-center transition-all duration-300">
@@ -75,10 +75,6 @@ const Footer = () => {
                             </li>
                             <li className="flex items-center">
                                 <span className="w-2 h-2 bg-primary-600 rounded-full mr-3"></span>
-                                Cleaning Services
-                            </li>
-                            <li className="flex items-center">
-                                <span className="w-2 h-2 bg-primary-600 rounded-full mr-3"></span>
                                 Consultancy Services
                             </li>
                         </ul>
@@ -115,7 +111,7 @@ const Footer = () => {
                 {/* Bottom Bar */}
                 <div className="border-t border-primary-900 mt-12 pt-8 text-center">
                     <p className="text-primary-400 text-sm font-medium">
-                        © 2023 by SHREE SWAMI SAMARTHA PEST CONTROL & CLEANING SERVICES. All rights reserved.
+                        © 2023 by SHREE SWAMI SAMARTHA PEST CONTROL SERVICES. All rights reserved.
                     </p>
                 </div>
             </div>

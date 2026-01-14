@@ -111,7 +111,7 @@ const Home = () => {
             SHREE SWAMI SAMARTHA
           </h1>
           <p className="text-2xl md:text-3xl text-primary-700 font-bold max-w-4xl mx-auto leading-relaxed">
-            Premium Pest Control & Cleaning Services
+            Premium Pest Control Services
           </p>
         </div>
 
@@ -140,7 +140,7 @@ const Home = () => {
             <div className="md:w-1/2">
               <h2 className="text-4xl font-bold mb-6 text-primary-900 uppercase tracking-wider">Welcome</h2>
               <p className="text-xl text-primary-800 leading-relaxed mb-6 font-medium">
-                Your home deserves nothing but the best. This is why we have started SHREE SWAMI SAMARTHA PEST CONTROL & CLEANING SERVICES, to make sure you'll get the most reliable service from one of our dedicated experts. For more details kindly visit our service page. which you are looking for.
+                Your home deserves nothing but the best. This is why we have started SHREE SWAMI SAMARTHA PEST CONTROL SERVICES, to make sure you'll get the most reliable service from one of our dedicated experts. For more details kindly visit our service page. which you are looking for.
               </p>
               <Link to="/services" className="inline-flex items-center text-primary-700 font-bold text-lg hover:text-primary-900 transition-colors">
                 Visit Service Page <span className="ml-2">→</span>
@@ -186,9 +186,7 @@ const Home = () => {
               </p>
               <p className="text-xl md:text-2xl text-primary-800 leading-relaxed font-medium">
                 Company Provides various pest control services to residential,
-                Commercial & Industrial Segment. Apart from pest control and
-                fogging service we have separate set up for Cleaning Service for
-                our esteemed Customers. We have dedicated expert team for each
+                Commercial & Industrial Segment. We have dedicated expert team for each
                 section. Head office is at Pune, Maharashtra, India.
               </p>
             </div>
@@ -290,7 +288,7 @@ const Home = () => {
         <div className="container mx-auto px-4">
           <h2 className="text-5xl md:text-6xl font-extrabold text-center mb-6 text-white">Our Services</h2>
           <p className="text-2xl text-primary-100 text-center max-w-3xl mx-auto mb-16 font-medium">
-            Comprehensive pest control and cleaning solutions tailored to your
+            Comprehensive pest control services solutions tailored to your
             needs
           </p>
 

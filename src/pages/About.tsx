@@ -5,7 +5,7 @@ const About = () => {
         {
             icon: <FaAward className="text-4xl" />,
             title: 'Quality Service',
-            description: 'We are committed to delivering the highest quality pest control and cleaning services.',
+            description: 'We are committed to delivering the highest quality pest control services.',
             color: 'bg-primary-900',
         },
         {
@@ -49,7 +49,7 @@ const About = () => {
                         <div className="bg-[#FDFCF9] rounded-3xl shadow-xl p-10 md:p-16 space-y-8 border border-primary-100">
                             <p className="text-xl text-primary-800 leading-relaxed font-medium">
                                 <span className="font-extrabold text-primary-900">Shree Swami Samartha</span> is a Pest Control Company established in{' '}
-                                <span className="font-bold">January 2023</span> with a vision to provide exceptional pest control and cleaning services to the people of Pune and beyond.
+                                <span className="font-bold">January 2023</span> with a vision to provide exceptional pest control to the people of Pune and beyond.
                             </p>
 
                             <p className="text-xl text-primary-800 leading-relaxed font-medium">
@@ -61,7 +61,7 @@ const About = () => {
                             </p>
 
                             <p className="text-xl text-primary-800 leading-relaxed font-medium">
-                                We provide comprehensive pest control services to residential, commercial, and industrial segments. Our services extend beyond pest control to include professional fogging and cleaning services, all delivered by our dedicated expert teams.
+                                We provide comprehensive pest control services to residential, commercial, and industrial segments. Our services extend beyond pest control to include professional fogging services, all delivered by our dedicated expert teams.
                             </p>
                         </div>
                     </div>

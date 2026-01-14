@@ -170,8 +170,6 @@ const Contact = () => {
                                             <option value="">Select a service</option>
                                             <option value="pest-control">Pest Control</option>
                                             <option value="fogging">Fogging Services</option>
-                                            <option value="cleaning">Cleaning Services</option>
-                                            <option value="consultancy">Business Consultancy</option>
                                             <option value="other">Other</option>
                                         </select>
                                     </div>
@@ -227,7 +225,7 @@ const Contact = () => {
                         Need Immediate Assistance?
                     </h2>
                     <p className="text-2xl md:text-3xl mb-12 max-w-3xl mx-auto text-primary-200 font-medium">
-                        Call us now for urgent pest control or cleaning services
+                        Call us now for urgent pest control services
                     </p>
                     <div className="flex flex-col sm:flex-row gap-6 justify-center">
                         <a

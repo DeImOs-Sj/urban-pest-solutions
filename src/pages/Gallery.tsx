@@ -7,16 +7,13 @@ const Gallery = () => {
     const images = [
         { src: '/carousel-1.png', alt: 'Pest Control Service 1', category: 'Pest Control' },
         { src: '/carousel-2.png', alt: 'Fogging Service', category: 'Fogging' },
-        { src: '/carousel-3.png', alt: 'Cleaning Service', category: 'Cleaning' },
         // Add more placeholder images as needed
         { src: 'https://via.placeholder.com/600x400?text=Service+4', alt: 'Service 4', category: 'Pest Control' },
-        { src: 'https://via.placeholder.com/600x400?text=Service+5', alt: 'Service 5', category: 'Cleaning' },
         { src: 'https://via.placeholder.com/600x400?text=Service+6', alt: 'Service 6', category: 'Fogging' },
     ];
 
     const videos = [
         { src: 'https://www.youtube.com/embed/dQw4w9WgXcQ', title: 'Pest Control Process', thumbnail: 'https://via.placeholder.com/600x400?text=Video+1' },
-        { src: 'https://www.youtube.com/embed/dQw4w9WgXcQ', title: 'Deep Cleaning Demo', thumbnail: 'https://via.placeholder.com/600x400?text=Video+2' },
         { src: 'https://www.youtube.com/embed/dQw4w9WgXcQ', title: 'Customer Testimonial', thumbnail: 'https://via.placeholder.com/600x400?text=Video+3' },
     ];
 
