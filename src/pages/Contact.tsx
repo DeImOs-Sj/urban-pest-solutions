@@ -46,7 +46,7 @@ const Contact = () => {
         {
             icon: <FaEnvelope className="text-3xl" />,
             title: 'Email Address',
-            details: 'info@samartha7pestcontrol.com',
+            details: 'info@samartha7pestcontrol.co.in',
             gradient: 'bg-primary-700',
         },
         {
@@ -239,7 +239,7 @@ const Contact = () => {
                         </a>
                         <a
                             href="tel:9529628158"
-                            className="btn-secondary border-white text-white hover:bg-white hover:text-primary-900 text-xl px-10 py-5 inline-flex items-center justify-center space-x-3"
+                            className="btn-secondary border-white text-primary-900 hover:bg-white hover:text-primary-900 text-xl px-10 py-5 inline-flex items-center justify-center space-x-3"
                         >
                             <FaPhone />
                             <span>9529628158</span>

@@ -8,6 +8,7 @@ import RavindraServices from "./pages/RavindraServices";
 import Contact from "./pages/Contact";
 import Review from "./pages/Review";
 import Gallery from "./pages/Gallery";
+import PestControlDetails from "./pages/PestControlDetails";
 import "./index.css";
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/services" element={<Services />} />
             <Route path="/ravindra-services" element={<RavindraServices />} />
+            <Route path="/pest-control-details" element={<PestControlDetails />} />
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/review" element={<Review />} />

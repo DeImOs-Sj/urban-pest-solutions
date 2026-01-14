@@ -31,11 +31,11 @@ const Header = () => {
       <div className="hidden md:block bg-primary-900 text-white text-sm font-medium">
         <div className="container mx-auto px-4 h-12 flex items-center justify-between">
           <a
-            href="mailto:info@samartha7pestcontrol.com"
+            href="mailto:info@samartha7pestcontrol.co.in"
             className="flex items-center hover:text-primary-200 transition-colors"
           >
             <FaEnvelope className="mr-2" />
-            info@samartha7pestcontrol.com
+            info@samartha7pestcontrol.co.in
           </a>
           <div className="flex items-center space-x-6">
             <a
@@ -133,11 +133,11 @@ const Header = () => {
                   8080839934
                 </a>
                 <a
-                  href="mailto:info@samartha7pestcontrol.com"
+                  href="mailto:info@samartha7pestcontrol.co.in"
                   className="flex items-center text-primary-800 font-medium"
                 >
                   <FaEnvelope className="mr-3" />
-                  info@samartha7pestcontrol.com
+                  info@samartha7pestcontrol.co.in
                 </a>
               </div>
             </div>

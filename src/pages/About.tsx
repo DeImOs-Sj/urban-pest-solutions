@@ -53,7 +53,7 @@ const About = () => {
                             </p>
 
                             <p className="text-xl text-primary-800 leading-relaxed font-medium">
-                                Founded by <span className="font-extrabold text-primary-900">Rohini Gaikwad (M.Com - Owner)</span>, who brings 17 years of invaluable experience in MNC's and Manufacturing Companies with specialization in Business Administration. Her expertise in business management ensures that our operations run smoothly and efficiently.
+                                Founded by <span className="font-extrabold text-primary-900">Rohini Gaikwad (M.Com - Owner)</span>, who brings 20 years of invaluable experience in MNC's and Manufacturing Companies with specialization in Business Administration. Her expertise in business management ensures that our operations run smoothly and efficiently.
                             </p>
 
                             <p className="text-xl text-primary-800 leading-relaxed font-medium">
@@ -182,7 +182,7 @@ const About = () => {
                                 </p>
                                 <div className="bg-primary-50 rounded-xl p-6">
                                     <p className="text-lg text-primary-800 font-medium">
-                                        <span className="font-bold text-primary-900">17 years</span> of experience in MNC's & Manufacturing Companies
+                                        <span className="font-bold text-primary-900">20 years</span> of experience in MNC's & Manufacturing Companies
                                     </p>
                                 </div>
                             </div>

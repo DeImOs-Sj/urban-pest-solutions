@@ -104,8 +104,8 @@ const Footer = () => {
                             </div>
                             <div className="flex items-center">
                                 <FaEnvelope className="text-primary-400 mr-3" />
-                                <a href="mailto:info@samartha7pestcontrol.com" className="text-primary-300 hover:text-white transition-colors text-sm font-medium">
-                                    info@samartha7pestcontrol.com
+                                <a href="mailto:info@samartha7pestcontrol.co.in" className="text-primary-300 hover:text-white transition-colors text-sm font-medium">
+                                    info@samartha7pestcontrol.co.in
                                 </a>
                             </div>
                         </div>

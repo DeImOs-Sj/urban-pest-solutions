@@ -1,6 +1,7 @@
 import { FaCheckCircle, FaStar } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import Carousel from "../components/Carousel";
+import ServiceHistory from "../components/ServiceHistory";
 
 const Home = () => {
   const services = [
@@ -8,25 +9,85 @@ const Home = () => {
       photo: "/pestControl.jpeg",
       title: "Pest Control",
       description:
-        "Where You Need It And When You Need It. We provide efficient and highly useful Pest Control Management Services.",
+        "Efficient and highly useful Pest Control Management Services for your home and business.",
+      link: "/services",
+    },
+    {
+      photo: "/cockroachControl.jpeg",
+      title: "Cockroach Control",
+      description:
+        "We Clean Up Your Problem of Cockroaches. Cockroaches are known to spread 33 kinds of bacteria.",
+      link: "/services",
+    },
+    {
+      photo: "/antControl.jpg",
+      title: "Ant Management",
+      description:
+        "Effective ant management services to control colonies and prevent infestation in your property.",
+      link: "/services",
+    },
+    {
+      photo: "/bedbugControl.jpeg",
+      title: "Bed Bug Treatment",
+      description:
+        "Prevent and exterminate bugs from your home with the cleanest methods and specific products.",
+      link: "/services",
+    },
+    {
+      photo: "/rodentControl.jpeg",
+      title: "Rodent Management",
+      description:
+        "Rats and mice carry various infectious diseases. We provide professional rodent control.",
+      link: "/services",
+    },
+    {
+      photo: "/flyControl.jpeg",
+      title: "Fly Management",
+      description:
+        "Professional fly control services to keep your environment hygienic and disease-free.",
+      link: "/services",
+    },
+    {
+      photo: "/mosControl.jpeg",
+      title: "Mosquito Management",
+      description:
+        "Comprehensive mosquito control to protect you from West Nile Virus, malaria and dengue.",
+      link: "/services",
+    },
+    {
+      photo: "/termiteControl.jpeg",
+      title: "Termite Management",
+      description:
+        "Subterranean termites are the most destructive species. We provide expert termite control.",
+      link: "/services",
+    },
+    {
+      photo: "/lizardControl.png",
+      title: "Lizard Management",
+      description:
+        "Lizard control services to keep your premises free from these unwanted reptiles.",
+      link: "/services",
+    },
+    {
+      photo: "/woodBorerControl.jpeg",
+      title: "Wood Borer Management",
+      description:
+        "Powder post beetles often attack hardwoods. We provide specialized wood borer treatment.",
+      link: "/services",
+    },
+    {
+      photo: "/spiderControl.jpeg",
+      title: "Spider Management",
+      description:
+        "Effective spider control and web removal services for a cleaner home environment.",
+      link: "/services",
     },
     {
       photo: "/fogging.jpeg",
-      title: "Fogging",
+      title: "Fogging Service",
       description:
-        "Using advanced fogging technique with fine pesticide spray directed by a blower for effective insect control.",
-    },
-    {
-      photo: "/cleaning.jpeg",
-      title: "Cleaning Services",
-      description:
-        "Professional house cleaning service tailored to your requirements with dedicated expert team.",
-    },
-    {
-      photo: "/all_services.jpg",
-      title: "Other Services",
-      description:
-        "Export Import Consultancy, Society Registration, Accounts Outsourcing, GST Services, and more.",
+        "Advanced fogging technique for killing insects using fine pesticide spray and hot vapour.",
+      link: "/services",
     },
   ];
 
@@ -72,6 +133,32 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Welcome Section */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-col md:flex-row items-center gap-12 max-w-6xl mx-auto">
+            <div className="md:w-1/2">
+              <h2 className="text-4xl font-bold mb-6 text-primary-900 uppercase tracking-wider">Welcome</h2>
+              <p className="text-xl text-primary-800 leading-relaxed mb-6 font-medium">
+                Your home deserves nothing but the best. This is why we have started SHREE SWAMI SAMARTHA PEST CONTROL & CLEANING SERVICES, to make sure you'll get the most reliable service from one of our dedicated experts. For more details kindly visit our service page. which you are looking for.
+              </p>
+              <Link to="/services" className="inline-flex items-center text-primary-700 font-bold text-lg hover:text-primary-900 transition-colors">
+                Visit Service Page <span className="ml-2">→</span>
+              </Link>
+            </div>
+            <div className="md:w-1/2">
+              <div className="relative group overflow-hidden rounded-3xl shadow-2xl">
+                <img
+                  src="/home.jpeg"
+                  alt="Give your home in safe hands"
+                  className="w-full h-[400px] object-cover transform group-hover:scale-105 transition-transform duration-700"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* About Section */}
       <section className="py-24 bg-white">
         <div className="container mx-auto px-4">
@@ -84,7 +171,7 @@ const Home = () => {
                 <span className="font-extrabold text-primary-900 decoration-4 underline decoration-accent-400">
                   Rohini Gaikwad (M.Com - Owner)
                 </span>{" "}
-                with Specialization in Business Administration having 17 years'
+                with Specialization in Business Administration having 20 years'
                 Experience in MNC's & Manufacturing Companies.
               </p>
               <p className="text-xl md:text-2xl text-primary-800 leading-relaxed mb-8 font-medium">
@@ -170,7 +257,7 @@ const Home = () => {
                 Partner - Business Administration
               </p>
               <p className="text-xl text-primary-700 leading-relaxed font-medium">
-                M.Com with Specialization in Business Administration having 17
+                M.Com with Specialization in Business Administration having 20
                 years' Experience in MNC's & Manufacturing Companies.
               </p>
             </div>
@@ -223,14 +310,23 @@ const Home = () => {
                 <h3 className="text-2xl font-bold mb-4 text-white">
                   {service.title}
                 </h3>
-                <p className="text-primary-100 text-lg leading-relaxed font-medium">
+                <p className="text-primary-100 text-lg leading-relaxed font-medium mb-6">
                   {service.description}
                 </p>
+                <Link
+                  to={service.link}
+                  className="inline-block bg-white text-primary-900 font-bold py-2 px-6 rounded-full hover:bg-primary-50 transition-colors duration-300"
+                >
+                  Know More
+                </Link>
               </div>
             ))}
           </div>
         </div>
       </section>
+
+      {/* Service History Section */}
+      <ServiceHistory />
 
       {/* Clients Section */}
       <section className="py-24 bg-[#FDFCF9]">
@@ -253,7 +349,7 @@ const Home = () => {
                   <img
                     src={client.image}
                     alt={client.name}
-                    className="max-h-full max-w-full object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300"
+                    className="max-h-full max-w-full object-contain "
                   />
                 </div>
                 <p className="font-bold text-xl text-primary-800 text-center">{client.name}</p>
