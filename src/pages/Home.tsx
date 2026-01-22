@@ -1,4 +1,3 @@
-import { FaCheckCircle, FaStar } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import Carousel from "../components/Carousel";
 import ServiceHistory from "../components/ServiceHistory";
