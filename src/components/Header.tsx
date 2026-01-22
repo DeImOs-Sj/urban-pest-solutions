@@ -28,25 +28,25 @@ const Header = () => {
   return (
     <>
       {/* Top Bar */}
-      <div className="hidden md:block bg-primary-900 text-white text-sm font-medium">
-        <div className="container mx-auto px-4 h-12 flex items-center justify-between">
+      <div className="bg-primary-900 text-white text-sm font-medium">
+        <div className="container mx-auto px-4 py-2 md:h-12 flex flex-col md:flex-row items-center justify-between space-y-2 md:space-y-0">
           <a
             href="mailto:info@samartha7pestcontrol.co.in"
-            className="flex items-center hover:text-primary-200 transition-colors"
+            className="flex items-center hover:text-primary-200 transition-colors font-bold text-sm md:text-2xl"
           >
             <FaEnvelope className="mr-2" />
             info@samartha7pestcontrol.co.in
           </a>
-          <div className="flex items-center space-x-6">
+          <div className="flex items-center space-x-4 md:space-x-6">
             <a
               href="tel:7620081685"
-              className="flex items-center hover:text-primary-200 transition-colors"
+              className="flex items-center hover:text-primary-200 transition-colors font-bold text-sm md:text-2xl"
             >
               <FaPhone className="mr-2" />
               7620081685
             </a>
             <span className="opacity-50">|</span>
-            <a href="tel:9529628158" className="hover:text-primary-200 transition-colors">
+            <a href="tel:9529628158" className="hover:text-primary-200 transition-colors font-bold text-sm md:text-2xl">
               9529628158
             </a>
           </div>
@@ -125,13 +125,22 @@ const Header = () => {
               ))}
 
               <div className="px-4 pt-4 border-t border-primary-100 space-y-3 mt-2">
-                <a
-                  href="tel:7620081685"
-                  className="flex items-center text-primary-800 font-medium"
-                >
-                  <FaPhone className="mr-3" />
-                  7620081685
-                </a>
+                <div className="flex flex-col space-y-3">
+                  <a
+                    href="tel:7620081685"
+                    className="flex items-center text-primary-800 font-medium"
+                  >
+                    <FaPhone className="mr-3" />
+                    7620081685
+                  </a>
+                  <a
+                    href="tel:9529628158"
+                    className="flex items-center text-primary-800 font-medium"
+                  >
+                    <FaPhone className="mr-3" />
+                    9529628158
+                  </a>
+                </div>
                 <a
                   href="mailto:info@samartha7pestcontrol.co.in"
                   className="flex items-center text-primary-800 font-medium"

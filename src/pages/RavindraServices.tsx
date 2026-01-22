@@ -1,61 +1,8 @@
-import { FaBuilding, FaStar } from 'react-icons/fa';
+import { FaStar } from 'react-icons/fa';
 import SEO from '../components/SEO';
+import ClientCarousel from '../components/ClientCarousel';
 
 const RavindraServices = () => {
-    const clients = [
-        {
-            name: 'Capgemini',
-            type: 'Corporate',
-            description: 'Leading global consulting and technology services company',
-        },
-        {
-            name: 'Residency Club',
-            type: 'Residential',
-            description: 'Premium residential complex',
-        },
-        {
-            name: 'Optima Height',
-            type: 'Residential',
-            description: 'Modern residential apartments',
-        },
-        {
-            name: 'Sheraton Hotel',
-            type: 'Hospitality',
-            description: 'Luxury hotel and resort',
-        },
-        {
-            name: 'Barclays',
-            type: 'Corporate',
-            description: 'International financial services company',
-        },
-        {
-            name: 'Nyati Elan',
-            type: 'Residential',
-            description: 'Premium residential project',
-        },
-        {
-            name: 'CT Hospital',
-            type: 'Healthcare',
-            description: 'Multi-specialty hospital',
-        },
-        {
-            name: 'Bramha Suncity',
-            type: 'Residential',
-            description: 'Large residential township',
-        },
-        {
-            name: 'Season 24 Banquet Hall',
-            type: 'Hospitality',
-            description: 'Premium banquet and event venue',
-        },
-    ];
-
-    const typeColors: { [key: string]: string } = {
-        Corporate: 'bg-primary-900',
-        Residential: 'bg-primary-800',
-        Hospitality: 'bg-primary-700',
-        Healthcare: 'bg-primary-600',
-    };
 
     return (
         <div className="min-h-screen bg-[#FDFCF9]">
@@ -83,39 +30,14 @@ const RavindraServices = () => {
                         <h2 className="text-4xl md:text-5xl font-extrabold mb-4 text-primary-900">Ravindra Bagal</h2>
                         <p className="text-2xl text-primary-500 font-bold mb-8 uppercase tracking-wide">Technical Expert & Co-Founder</p>
                         <p className="text-primary-700 leading-relaxed text-xl font-medium">
-                            With 6 years of hands-on experience in the pest control industry, Ravindra has personally served numerous prestigious clients across Pune. His dedication to understanding customer problems at the ground level and delivering quality solutions has earned the trust of leading organizations.
-                        </p>
+                            Having 10 years’ experience in Pest Control Service Industries, He had worked on Ground Level only to learn Pest Control Business Activities, how they works, What problems & difficulties Customers are facing due to Cockroach, Ant, Rat, Lizard,  Bed Bugs, Mosquitos etc.                        </p>
                     </div>
                 </div>
             </section>
 
-            {/* Clients Grid */}
-            <section className="py-24 bg-[#FDFCF9]">
-                <div className="container mx-auto px-4">
-                    <h2 className="section-title text-center mb-6">Our Esteemed Clients</h2>
-                    <p className="section-subtitle text-center max-w-3xl mx-auto mb-16 text-2xl">
-                        Proud to serve these distinguished organizations
-                    </p>
+            {/* Clients Section */}
+            <ClientCarousel />
 
-                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
-                        {clients.map((client, index) => (
-                            <div
-                                key={index}
-                                className="card p-8 text-center hover:scale-105 group border border-primary-200 bg-white"
-                            >
-                                <div className={`w-24 h-24 ${typeColors[client.type]} rounded-full mx-auto mb-6 flex items-center justify-center text-white transform group-hover:rotate-12 transition-transform duration-300 shadow-lg`}>
-                                    <FaBuilding className="text-3xl" />
-                                </div>
-                                <h3 className="text-2xl font-bold mb-3 text-primary-900">{client.name}</h3>
-                                <span className={`inline-block px-4 py-1 rounded-full text-sm font-bold mb-4 ${typeColors[client.type]} text-white uppercase tracking-wide`}>
-                                    {client.type}
-                                </span>
-                                <p className="text-primary-600 font-medium text-lg">{client.description}</p>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
 
             {/* Statistics */}
             <section className="py-24 bg-white">

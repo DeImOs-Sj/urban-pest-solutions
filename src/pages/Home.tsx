@@ -2,6 +2,7 @@ import { FaCheckCircle, FaStar } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import Carousel from "../components/Carousel";
 import ServiceHistory from "../components/ServiceHistory";
+import ClientCarousel from "../components/ClientCarousel";
 import SEO from "../components/SEO";
 
 const Home = () => {
@@ -92,16 +93,6 @@ const Home = () => {
     },
   ];
 
-  const clients = [
-    { name: "Capgemini", image: "/capgemini.png" },
-    { name: "Residency Club", image: "/residency-club.jpg" },
-    { name: "Optima Height", image: "/optima-height.jpg" },
-    { name: "Sheraton Hotel", image: "/sheraton-hotel.jpg" },
-    { name: "Barclays", image: "/barclays.jpg" },
-    { name: "Nyati Elan", image: "/nyati-elan.jpg" },
-    { name: "Bramha Suncity", image: "/bramha-suncity.jpg" },
-    { name: "Season 24 Banquet Hall", image: "/season-24.jpg" },
-  ];
 
   return (
     <div className="min-h-screen bg-[#FDFCF9]">
@@ -157,7 +148,7 @@ const Home = () => {
                 <img
                   src="/home.jpeg"
                   alt="Give your home in safe hands"
-                  className="w-full h-[400px] object-cover transform group-hover:scale-105 transition-transform duration-700"
+                  className="w-full h-[360px] object-cover transform group-hover:scale-105 transition-transform duration-700"
                 />
               </div>
             </div>
@@ -185,10 +176,7 @@ const Home = () => {
                 <span className="font-extrabold text-primary-900 decoration-4 underline decoration-accent-400">
                   Ravindra Bagal (Technician - Owner)
                 </span>{" "}
-                having 6 years' experience in Pest Control Service Industries.
-                He is working on Ground Level to understand Customer Problems &
-                what difficulties they are facing due to Cockroach, Ant, Rat,
-                Lizard, Bed Bugs, Mosquitos etc.
+                having 10 years’ experience in Pest Control Service Industries, He had worked on Ground Level only to learn Pest Control Business Activities, how they works, What problems & difficulties Customers are facing due to Cockroach, Ant, Rat, Lizard,  Bed Bugs, Mosquitos etc.
               </p>
               <p className="text-xl md:text-2xl text-primary-800 leading-relaxed font-medium">
                 Company Provides various pest control services to residential,
@@ -207,7 +195,7 @@ const Home = () => {
             {/* Vision */}
             <div className="card p-12 border-t-8 border-primary-700 hover:border-primary-900">
               <div className="w-20 h-20 bg-primary-700 rounded-full flex items-center justify-center mb-8 shadow-lg">
-                <FaStar className="text-white text-3xl" />
+                <img src="/our_vision.jpeg" alt="" className="w-full h-full object-cover rounded-full" />
               </div>
               <h3 className="text-4xl font-bold mb-6 text-primary-900">
                 Our Vision
@@ -222,7 +210,7 @@ const Home = () => {
             {/* Mission */}
             <div className="card p-12 border-t-8 border-primary-500 hover:border-primary-700">
               <div className="w-20 h-20 bg-primary-500 rounded-full flex items-center justify-center mb-8 shadow-lg">
-                <FaCheckCircle className="text-white text-3xl" />
+                <img src="/our_mission.jpeg" alt="" className="w-full h-full object-cover rounded-full" />
               </div>
               <h3 className="text-4xl font-bold mb-6 text-primary-900">
                 Our Mission
@@ -280,9 +268,7 @@ const Home = () => {
                 Partner - Technical Expert
               </p>
               <p className="text-xl text-primary-700 leading-relaxed font-medium">
-                Technician having 6 years' experience in Pest Control Service
-                Industries, working on ground level to understand customer
-                problems.
+                Having 10 years’ experience in Pest Control Service Industries, He had worked on Ground Level only to learn Pest Control Business Activities, how they works, What problems & difficulties Customers are facing due to Cockroach, Ant, Rat, Lizard,  Bed Bugs, Mosquitos etc.
               </p>
             </div>
           </div>
@@ -333,37 +319,10 @@ const Home = () => {
       <ServiceHistory />
 
       {/* Clients Section */}
-      <section className="py-24 bg-[#FDFCF9]">
-        <div className="container mx-auto px-4">
-          <h2 className="section-title text-center">
-            Services Rendered by Ravindra Bagal
-          </h2>
-          <p className="text-center text-primary-600 mb-16 text-2xl font-medium">
-            Thanks for giving us an opportunity to serve you with our Quality &
-            Assured services
-          </p>
-
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
-            {clients.map((client, index) => (
-              <div
-                key={index}
-                className="bg-white rounded-xl p-8 flex flex-col items-center justify-center shadow-md hover:shadow-xl transition-all duration-300 border border-primary-100 group"
-              >
-                <div className="h-32 w-full flex items-center justify-center mb-4 overflow-hidden">
-                  <img
-                    src={client.image}
-                    alt={client.name}
-                    className="max-h-full max-w-full object-contain "
-                  />
-                </div>
-                <p className="font-bold text-xl text-primary-800 text-center">{client.name}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <ClientCarousel />
 
       {/* CTA Section */}
+
       <section className="py-24 bg-primary-950 text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-5xl md:text-7xl font-extrabold mb-8">

@@ -77,7 +77,6 @@ const Review = () => {
         ));
     };
 
-    const averageRating = existingReviews.reduce((acc, review) => acc + review.rating, 0) / existingReviews.length;
 
     return (
         <div className="min-h-screen bg-[#FDFCF9]">
@@ -102,12 +101,12 @@ const Review = () => {
                     <div className="max-w-5xl mx-auto bg-[#FDFCF9] rounded-3xl shadow-xl p-10 md:p-14 text-center border border-primary-100">
                         <h2 className="text-4xl font-bold mb-8 text-primary-900">Overall Rating</h2>
                         <div className="flex items-center justify-center mb-6">
-                            <span className="text-7xl font-extrabold text-primary-900 mr-6">{averageRating.toFixed(1)}</span>
+                            <span className="text-7xl font-extrabold text-primary-900 mr-6">4.9</span>
                             <div>
                                 <div className="flex mb-3">
-                                    {renderStars(Math.round(averageRating))}
+                                    {renderStars(Math.round(4.9))}
                                 </div>
-                                <p className="text-xl text-primary-600 font-medium">Based on {existingReviews.length} reviews</p>
+                                <p className="text-xl text-primary-600 font-medium">Based on 512 reviews</p>
                             </div>
                         </div>
                     </div>
