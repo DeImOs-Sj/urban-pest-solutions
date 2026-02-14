@@ -145,7 +145,7 @@ const Home = () => {
             <div className="md:w-1/2">
               <div className="relative group overflow-hidden rounded-3xl shadow-2xl">
                 <img
-                  src="/home.jpeg"
+                  src="/home2.jpg"
                   alt="Give your home in safe hands"
                   className="w-full h-[360px] object-cover transform group-hover:scale-105 transition-transform duration-700"
                 />
