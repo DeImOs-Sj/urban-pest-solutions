@@ -35,7 +35,7 @@ const Contact = () => {
         {
             icon: <FaMapMarkerAlt className="text-3xl" />,
             title: 'Our Location',
-            details: 'Sai Developers, Dwarka Residency, Mundhwa - Manjari Rd, Mundhwa, Maharashtra',
+            details: "Shree Swami Samartha Pest Control & Cleaning Services Flat No.106, S.No.126, Dwarka Residency, Near SNBP International School, Z Corner, Manjari, Pune – 412307Land Mark – Next to Vedant Graphics",
             gradient: 'bg-primary-900',
         },
         {
