@@ -9,6 +9,7 @@ import Contact from "./pages/Contact";
 import Review from "./pages/Review";
 import Gallery from "./pages/Gallery";
 import PestControlDetails from "./pages/PestControlDetails";
+import NotFound from "./pages/NotFound";
 import "./index.css";
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/review" element={<Review />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
         <Footer />
