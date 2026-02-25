@@ -32,9 +32,9 @@ const About = () => {
     return (
         <div className="min-h-screen bg-[#FDFCF9]">
             <SEO
-                title="About Us | Shree Swami Samartha Pest Control Pune"
-                description="Learn about Shree Swami Samartha Pest Control, founded by Rohini Gaikwad and Ravindra Bagal. We provide expert pest control services in Pune with over 20 years of business experience."
-                keywords="about shree swami samartha pest control, pest control experts pune, rohini gaikwad, ravindra bagal, pest control company pune"
+                title="Top-Rated Pest Control Company in Pune | About Shree Swami Samartha"
+                description="Expert pest control in Pune with 20+ years of combined experience. Founded by Rohini Gaikwad & Ravindra Bagal, we provide professional extermination services across Hadapsar, Kharadi, and Mundhwa. Certified, safe, and effective solutions."
+                keywords="about shree swami samartha pest control, pest control experts pune, rohini gaikwad, ravindra bagal, top-rated pest control company pune, professional exterminators Pune, Hadapsar, Kharadi, Mundhwa, Wagholi"
             />
             {/* Hero Section */}
             <section className="relative py-24 bg-primary-900 text-white overflow-hidden">

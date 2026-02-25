@@ -12,9 +12,9 @@ interface SEOProps {
 }
 
 const SEO: React.FC<SEOProps> = ({
-    title = "Shree Swami Samartha Pest Control Services | Pune",
-    description = "Professional pest control services in Pune. Expert solutions for residential, commercial, and industrial needs. Cockroach, termite, bed bug, and rodent control.",
-    keywords = "pest control pune, best pest control in pune, termite treatment pune, cockroach control pune, bed bug treatment, rodent control, fogging services pune",
+    title = "Shree Swami Samartha Pest Control Services | Pune Exterminators",
+    description = "Leading pest control services in Pune. Certified experts in termite treatment, cockroach control, bed bug removal, and rodent management. Eco-friendly and safe solutions for homes and businesses in Hadapsar, Kharadi, Mundhwa, and Wagholi.",
+    keywords = "pest control pune, best pest control in pune, termite treatment pune, cockroach control pune, bed bug treatment, rodent control, fogging services pune, residential pest control, commercial pest control pune, herbal pest control pune, organic pest control, exterminator pune, Hadapsar, Kharadi, Magarpatta, Wagholi, Mundhwa, Amanora, Viman Nagar, Kalyani Nagar",
     canonical = "https://samartha7pestcontrol.co.in",
     ogType = "website",
     ogImage = "/samartha.jpeg",

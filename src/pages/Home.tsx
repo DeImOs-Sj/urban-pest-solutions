@@ -96,18 +96,18 @@ const Home = () => {
   return (
     <div className="min-h-screen bg-[#FDFCF9]">
       <SEO
-        title="Best Pest Control Services in Pune | Residential & Commercial"
-        description="Shree Swami Samartha Pest Control offers professional pest control services in Pune. We specialize in cockroach, termite, bed bug, and rodent control for homes and businesses."
-        keywords="pest control pune, best pest control in pune, termite treatment pune, cockroach control pune, bed bug treatment, rodent control, fogging services pune, residential pest control, commercial pest control pune"
+        title="Best Pest Control Services in Pune | #1 Exterminator & Termite Treatment"
+        description="Shree Swami Samartha Pest Control offers professional, eco-friendly pest control services in Pune. Certified experts in cockroach, termite, bed bug, and rodent control for homes and businesses. Serving Hadapsar, Kharadi, Mundhwa, and Wagholi."
+        keywords="pest control pune, best pest control in pune, termite treatment pune, cockroach control pune, bed bug treatment, rodent control, fogging services pune, residential pest control, commercial pest control pune, herbal pest control pune, organic pest control, exterminator pune, Hadapsar, Kharadi, Magarpatta, Wagholi, Mundhwa, Amanora, Viman Nagar, Kalyani Nagar"
       />
       {/* Hero Section with Carousel */}
       <section className="container mx-auto px-4 pt-8 pb-12">
         <div className="text-center mb-10">
-          <h1 className="text-6xl md:text-8xl font-extrabold text-primary-900 mb-6 tracking-tight">
-            SHREE SWAMI SAMARTHA
+          <h1 className="text-6xl md:text-8xl font-extrabold text-primary-900 mb-6 tracking-tight uppercase">
+            Shree Swami Samartha
           </h1>
           <p className="text-2xl md:text-3xl text-primary-700 font-bold max-w-4xl mx-auto leading-relaxed">
-            Premium Pest Control Services
+            Standard Pest Control Services & Exterminator Pune
           </p>
         </div>
 
@@ -134,18 +134,18 @@ const Home = () => {
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row items-center gap-12 max-w-6xl mx-auto">
             <div className="md:w-1/2">
-              <h2 className="text-4xl font-bold mb-6 text-primary-900 uppercase tracking-wider">Welcome</h2>
+              <h2 className="text-4xl font-bold mb-6 text-primary-900 uppercase tracking-wider">Professional Pest Control in Pune</h2>
               <p className="text-xl text-primary-800 leading-relaxed mb-6 font-medium">
-                Your home deserves nothing but the best. This is why we have started SHREE SWAMI SAMARTHA PEST CONTROL SERVICES, to make sure you'll get the most reliable service from one of our dedicated experts. For more details kindly visit our service page. which you are looking for.
+                Your home deserves a safe, pest-free environment. Shree Swami Samartha Pest Control Services provides reliable and professional extermination solutions in Pune. From cockroach control to advanced termite treatment, our dedicated experts ensure high-quality service for residential and commercial properties.
               </p>
               <Link to="/services" className="inline-flex items-center text-primary-700 font-bold text-lg hover:text-primary-900 transition-colors">
-                Visit Service Page <span className="ml-2">→</span>
+                View All Extermination Services <span className="ml-2">→</span>
               </Link>
             </div>
             <div className="md:w-1/2">
               <div className="relative group overflow-hidden rounded-3xl shadow-2xl">
                 <img
-                  src="/home2.jpg"
+                  src="/home2.png"
                   alt="Give your home in safe hands"
                   className="w-full h-[360px] object-cover transform group-hover:scale-105 transition-transform duration-700"
                 />
@@ -167,7 +167,7 @@ const Home = () => {
                 <span className="font-extrabold text-primary-900 decoration-4 underline decoration-accent-400">
                   Rohini Gaikwad (M.Com - Owner)
                 </span>{" "}
-                with Specialization in Business Administration having 20 years'
+                with Specialization in Business Administration having 20 years of
                 Experience in MNC's & Manufacturing Companies.
               </p>
               <p className="text-xl md:text-2xl text-primary-800 leading-relaxed mb-8 font-medium">
@@ -175,10 +175,10 @@ const Home = () => {
                 <span className="font-extrabold text-primary-900 decoration-4 underline decoration-accent-400">
                   Ravindra Bagal (Technician - Owner)
                 </span>{" "}
-                having 10 years’ experience in Pest Control Service Industries, He had worked on Ground Level only to learn Pest Control Business Activities, how they works, What problems & difficulties Customers are facing due to Cockroach, Ant, Rat, Lizard,  Bed Bugs, Mosquitos etc.
+                having 10 years of experience in Pest Control Service Industries, He had worked on Ground Level only to learn Pest Control Business Activities, how they works, What problems & difficulties Customers are facing due to Cockroach, Ant, Rat, Lizard,  Bed Bugs, Mosquitos etc.
               </p>
               <p className="text-xl md:text-2xl text-primary-800 leading-relaxed font-medium">
-                Company Provides various pest control services to residential,
+                Company Provides various pest control services as well as fogging service to residential,
                 Commercial & Industrial Segment. We have dedicated expert team for each
                 section. Head office is at Pune, Maharashtra, India.
               </p>
@@ -277,10 +277,9 @@ const Home = () => {
       {/* Services Section */}
       <section className="py-24 bg-primary-900 text-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-5xl md:text-6xl font-extrabold text-center mb-6 text-white">Our Services</h2>
-          <p className="text-2xl text-primary-100 text-center max-w-3xl mx-auto mb-16 font-medium">
-            Comprehensive pest control services solutions tailored to your
-            needs
+          <h2 className="text-5xl md:text-6xl font-extrabold text-center mb-6 text-white">Expert Pest Control & Extermination Services</h2>
+          <p className="text-2xl text-primary-100 text-center max-w-4xl mx-auto mb-16 font-medium">
+            Standard pest control and management solutions tailored for Pune's residential, commercial, and industrial segments.
           </p>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -319,6 +318,44 @@ const Home = () => {
 
       {/* Clients Section */}
       <ClientCarousel />
+
+      {/* Industry Resources Section */}
+      <section className="py-24 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-5xl mx-auto text-center">
+            <h2 className="text-4xl font-bold mb-12 text-primary-900">Industry Insights & Safety Standards</h2>
+            <div className="grid md:grid-cols-3 gap-8">
+              <a
+                href="http://ppqs.gov.in/divisions/cib-rc"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-8 rounded-2xl bg-primary-50 hover:bg-primary-100 transition-colors border border-primary-100 group"
+              >
+                <h3 className="text-xl font-bold mb-4 text-primary-900 group-hover:text-primary-700">CIB&RC India</h3>
+                <p className="text-primary-700 font-medium">Central Insecticides Board & Registration Committee guidelines for pesticide use in India.</p>
+              </a>
+              <a
+                href="https://www.who.int/teams/control-of-neglected-tropical-diseases/vector-ecology-and-management/vector-control"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-8 rounded-2xl bg-primary-50 hover:bg-primary-100 transition-colors border border-primary-100 group"
+              >
+                <h3 className="text-xl font-bold mb-4 text-primary-900 group-hover:text-primary-700">WHO Standards</h3>
+                <p className="text-primary-700 font-medium">World Health Organization global standards for vector control and public health safety.</p>
+              </a>
+              <a
+                href="https://www.pestworld.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-8 rounded-2xl bg-primary-50 hover:bg-primary-100 transition-colors border border-primary-100 group"
+              >
+                <h3 className="text-xl font-bold mb-4 text-primary-900 group-hover:text-primary-700">PestWorld Tips</h3>
+                <p className="text-primary-700 font-medium">Professional insights and educational resources on pest management from NPMA.</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* CTA Section */}
 

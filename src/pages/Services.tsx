@@ -73,7 +73,7 @@ const Services = () => {
             image: "/rodentControl.jpeg",
             title: "Rodent Management",
             description: "Rats and mice carry various infectious diseases",
-            details: "Rats and mice carry diseases including Salmonella and LCMV. Mice leave little drops of urine wherever they go, which can trigger asthma attacks. Rats may bite people when threatened. Both rats and mice instinctively gnaw on things, which is damaging to property and can be dangerous if they gnaw on wires.",
+            details: "Rats and mice carry diseases such as Salmonella and LCMV. Mice leave small drops of urine wherever they go, which can trigger asthma attacks. Rats may bite when threatened. Both rats and mice instinctively gnaw on objects, which can damage property and become dangerous if they chew on electrical wires, potentially leading to sparks or fires.",
             features: [
                 "Trapping Systems",
                 "Bait Stations",
@@ -201,9 +201,9 @@ const Services = () => {
     return (
         <div className="min-h-screen bg-[#FDFCF9]">
             <SEO
-                title="Pest Control Services Pune | Termite, Cockroach, Bed Bug Control"
-                description="Comprehensive pest control services in Pune. We offer termite management, cockroach control, bed bug treatment, rodent control, and professional fogging services."
-                keywords="pest control services pune, termite treatment, cockroach control, bed bug treatment, rodent management, fogging services, lizard control, mosquito control pune"
+                title="Top-Rated Pest Control Services in Pune | Expert Exterminator for Termite & Roaches"
+                description="Professional and top-rated pest control services in Pune. We specialize in termite treatment, cockroach control, bed bug removal, and rodent management. Serving residential and commercial clients in Hadapsar, Kharadi, Wagholi, and Mundhwa with eco-friendly solutions."
+                keywords="pest control services pune, termite treatment pune, cockroach control pune, bed bug removal Pune, rodent management, fogging services pune, lizard control, mosquito control pune, best exterminator Pune, affordable pest control Pune, top-rated pest control, professional exterminator, Hadapsar, Kharadi, Wagholi, Mundhwa"
             />
             {/* Hero Section */}
             <section className="relative py-24 bg-primary-900 text-white overflow-hidden">

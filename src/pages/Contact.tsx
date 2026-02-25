@@ -61,9 +61,9 @@ const Contact = () => {
     return (
         <div className="min-h-screen bg-[#FDFCF9]">
             <SEO
-                title="Contact Us | Hire Best Pest Control in Pune"
-                description="Get in touch with Shree Swami Samartha Pest Control for a free quote. We provide reliable pest control services in Pune. Call us at 7620081685 or visit our office in Mundhwa."
-                keywords="contact pest control pune, pest control quote pune, shree swami samartha contact, pest control mundhwa, hire pest control pune"
+                title="Contact #1 Pest Control in Pune | Free Quote & Inspection"
+                description="Get a free pest control quote in Pune. Contact Shree Swami Samartha Pest Control for immediate assistance with termites, cockroaches, and bed bugs. Serving Hadapsar, Kharadi, and across Pune."
+                keywords="contact pest control pune, pest control quote pune, free pest inspection Pune, emergency pest removal Pune, Hadapsar pest control, Kharadi exterminator"
             />
             {/* Hero Section */}
             <section className="relative py-24 bg-primary-900 text-white overflow-hidden">
