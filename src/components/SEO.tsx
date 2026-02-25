@@ -9,6 +9,9 @@ interface SEOProps {
     ogType?: string;
     ogImage?: string;
     twitterHandle?: string;
+    brandNameInTitle?: boolean;
+    schemaType?: 'LocalBusiness' | 'FAQPage' | 'HowTo' | 'Article';
+    additionalSchema?: any[];
 }
 
 const SEO: React.FC<SEOProps> = ({
@@ -19,11 +22,13 @@ const SEO: React.FC<SEOProps> = ({
     ogType = "website",
     ogImage = "/samartha.jpeg",
     twitterHandle = "@shreeswamisamartha",
+    brandNameInTitle = true,
+    additionalSchema = [],
 }) => {
     const siteName = "Shree Swami Samartha Pest Control";
-    const fullTitle = title.includes(siteName) ? title : `${title} | ${siteName}`;
+    const fullTitle = (brandNameInTitle && !title.includes(siteName)) ? `${title} | ${siteName}` : title;
 
-    const structuredData = {
+    const localBusinessSchema = {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": siteName,
@@ -31,11 +36,13 @@ const SEO: React.FC<SEOProps> = ({
         "@id": "https://samartha7pestcontrol.co.in",
         "url": "https://samartha7pestcontrol.co.in",
         "telephone": "+91-7620081685",
+        "priceRange": "₹₹",
         "address": {
             "@type": "PostalAddress",
             "streetAddress": "Sai Developers, Dwarka Residency, Mundhwa - Manjari Rd, Mundhwa",
             "addressLocality": "Pune",
             "postalCode": "411036",
+            "addressRegion": "Maharashtra",
             "addressCountry": "IN"
         },
         "geo": {
@@ -58,7 +65,8 @@ const SEO: React.FC<SEOProps> = ({
         },
         "sameAs": [
             "https://www.facebook.com/shreeswamisamarthapestcontrol",
-            "https://www.instagram.com/shreeswamisamarthapestcontrol"
+            "https://www.instagram.com/shreeswamisamarthapestcontrol",
+            "https://www.linkedin.com/company/shree-swami-samartha-pest-control"
         ]
     };
 
@@ -85,12 +93,22 @@ const SEO: React.FC<SEOProps> = ({
             <meta name="twitter:description" content={description} />
             <meta name="twitter:image" content={ogImage} />
 
+            {/* Robots */}
+            <meta name="robots" content="index, follow" />
+
             {/* Structured Data */}
             <script type="application/ld+json">
-                {JSON.stringify(structuredData)}
+                {JSON.stringify(localBusinessSchema)}
             </script>
+            {additionalSchema.map((schema, index) => (
+                <script key={index} type="application/ld+json">
+                    {JSON.stringify(schema)}
+                </script>
+            ))}
         </Helmet>
     );
 };
 
 export default SEO;
+
+

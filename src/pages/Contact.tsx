@@ -34,26 +34,26 @@ const Contact = () => {
     const contactInfo = [
         {
             icon: <FaMapMarkerAlt className="text-3xl" />,
-            title: 'Our Location',
-            details: "Shree Swami Samartha Pest Control & Cleaning Services Flat No.106, S.No.126, Dwarka Residency, Near SNBP International School, Z Corner, Manjari, Pune – 412307Land Mark – Next to Vedant Graphics",
+            title: 'Our Pune Office',
+            details: "Flat No.106, S.No.126, Dwarka Residency, Near SNBP International School, Z Corner, Manjari, Pune – 412307. Landmark: Next to Vedant Graphics.",
             gradient: 'bg-primary-900',
         },
         {
             icon: <FaPhone className="text-3xl" />,
-            title: 'Phone Numbers',
-            details: '7620081685 / 9529628158',
+            title: 'Call Us Directly',
+            details: '+91 7620081685\n+91 9529628158',
             gradient: 'bg-primary-800',
         },
         {
             icon: <FaEnvelope className="text-3xl" />,
-            title: 'Email Address',
+            title: 'Official Email',
             details: 'info@samartha7pestcontrol.co.in',
             gradient: 'bg-primary-700',
         },
         {
             icon: <FaClock className="text-3xl" />,
-            title: 'Working Hours',
-            details: 'Mon - Sat: 9:00 AM - 7:00 PM\nSunday: By Appointment',
+            title: 'Service Hours',
+            details: 'Mon - Sat: 9:00 AM - 7:00 PM\nSunday: By Appointment only',
             gradient: 'bg-primary-600',
         },
     ];
@@ -61,16 +61,16 @@ const Contact = () => {
     return (
         <div className="min-h-screen bg-[#FDFCF9]">
             <SEO
-                title="Contact #1 Pest Control in Pune | Free Quote & Inspection"
-                description="Get a free pest control quote in Pune. Contact Shree Swami Samartha Pest Control for immediate assistance with termites, cockroaches, and bed bugs. Serving Hadapsar, Kharadi, and across Pune."
+                title="Contact Us | Book Pest Control in Pune"
+                description="Contact Shree Swami Samartha Pest Control for a free inspection. Expert pest management in Hadapsar, Kharadi, Wagholi, and Mundhwa. Call +91 7620081685."
                 keywords="contact pest control pune, pest control quote pune, free pest inspection Pune, emergency pest removal Pune, Hadapsar pest control, Kharadi exterminator"
             />
             {/* Hero Section */}
             <section className="relative py-24 bg-primary-900 text-white overflow-hidden">
                 <div className="relative container mx-auto px-4 text-center">
-                    <h1 className="text-6xl md:text-7xl font-extrabold mb-6 tracking-tight">Get in Touch</h1>
+                    <h1 className="text-6xl md:text-7xl font-extrabold mb-6 tracking-tight">Contact Our Pune Team</h1>
                     <p className="text-2xl md:text-3xl max-w-4xl mx-auto font-medium text-primary-100">
-                        We'd love to hear from you. Contact us for any queries or to schedule a service
+                        Discuss your pest concerns with our experts and get a customized solution today.
                     </p>
                 </div>
             </section>
@@ -78,6 +78,7 @@ const Contact = () => {
             {/* Contact Info Cards */}
             <section className="py-24 bg-white">
                 <div className="container mx-auto px-4">
+                    <h2 className="section-title text-center mb-16 text-primary-900 text-4xl font-bold uppercase">Reach Out To Us</h2>
                     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
                         {contactInfo.map((info, index) => (
                             <div
@@ -97,7 +98,7 @@ const Contact = () => {
                     <div className="grid lg:grid-cols-2 gap-16 max-w-7xl mx-auto">
                         {/* Contact Form */}
                         <div className="bg-[#FDFCF9] rounded-3xl shadow-xl p-10 md:p-12 border border-primary-100">
-                            <h2 className="text-4xl font-bold mb-8 text-primary-900">Send us a Message</h2>
+                            <h3 className="text-3xl font-bold mb-8 text-primary-900">Send us a Message</h3>
 
                             {submitted ? (
                                 <div className="bg-green-50 border-2 border-green-500 rounded-xl p-8 text-center">
@@ -106,8 +107,8 @@ const Contact = () => {
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                                         </svg>
                                     </div>
-                                    <h3 className="text-2xl font-bold text-green-700 mb-2">Thank You!</h3>
-                                    <p className="text-primary-700 font-medium">Your message has been sent successfully. We'll get back to you soon.</p>
+                                    <h4 className="text-2xl font-bold text-green-700 mb-2">Message Sent!</h4>
+                                    <p className="text-primary-700 font-medium">Thank you for reaching out. Our team will contact you shortly to discuss your pest control needs.</p>
                                 </div>
                             ) : (
                                 <form onSubmit={handleSubmit} className="space-y-6">
@@ -123,7 +124,7 @@ const Contact = () => {
                                             value={formData.name}
                                             onChange={handleChange}
                                             className="w-full px-6 py-4 border-2 border-primary-200 rounded-xl focus:border-primary-900 focus:outline-none transition-colors text-lg bg-white"
-                                            placeholder="John Doe"
+                                            placeholder="Your Name"
                                         />
                                     </div>
 
@@ -140,7 +141,7 @@ const Contact = () => {
                                                 value={formData.email}
                                                 onChange={handleChange}
                                                 className="w-full px-6 py-4 border-2 border-primary-200 rounded-xl focus:border-primary-900 focus:outline-none transition-colors text-lg bg-white"
-                                                placeholder="john@example.com"
+                                                placeholder="email@example.com"
                                             />
                                         </div>
 
@@ -156,14 +157,14 @@ const Contact = () => {
                                                 value={formData.phone}
                                                 onChange={handleChange}
                                                 className="w-full px-6 py-4 border-2 border-primary-200 rounded-xl focus:border-primary-900 focus:outline-none transition-colors text-lg bg-white"
-                                                placeholder="+91 1234567890"
+                                                placeholder="+91"
                                             />
                                         </div>
                                     </div>
 
                                     <div>
                                         <label htmlFor="subject" className="block text-lg font-bold text-primary-900 mb-2">
-                                            Subject *
+                                            Service Required *
                                         </label>
                                         <select
                                             id="subject"
@@ -174,15 +175,17 @@ const Contact = () => {
                                             className="w-full px-6 py-4 border-2 border-primary-200 rounded-xl focus:border-primary-900 focus:outline-none transition-colors text-lg bg-white"
                                         >
                                             <option value="">Select a service</option>
-                                            <option value="pest-control">Pest Control</option>
+                                            <option value="pest-control">General Pest Control</option>
+                                            <option value="termite">Termite Treatment</option>
+                                            <option value="cockroach">Cockroach Control</option>
                                             <option value="fogging">Fogging Services</option>
-                                            <option value="other">Other</option>
+                                            <option value="other">Other Inquiry</option>
                                         </select>
                                     </div>
 
                                     <div>
                                         <label htmlFor="message" className="block text-lg font-bold text-primary-900 mb-2">
-                                            Message *
+                                            How can we help? *
                                         </label>
                                         <textarea
                                             id="message"
@@ -192,7 +195,7 @@ const Contact = () => {
                                             onChange={handleChange}
                                             rows={5}
                                             className="w-full px-6 py-4 border-2 border-primary-200 rounded-xl focus:border-primary-900 focus:outline-none transition-colors resize-none text-lg bg-white"
-                                            placeholder="Tell us about your requirements..."
+                                            placeholder="Describe the pest issue you're facing..."
                                         ></textarea>
                                     </div>
 
@@ -200,7 +203,7 @@ const Contact = () => {
                                         type="submit"
                                         className="w-full btn-primary flex items-center justify-center space-x-3 text-xl py-4"
                                     >
-                                        <span>Send Message</span>
+                                        <span>Send Inquiry</span>
                                         <FaPaperPlane />
                                     </button>
                                 </form>
@@ -215,6 +218,7 @@ const Contact = () => {
                                 height="100%"
                                 style={{ border: 0 }}
                                 allowFullScreen
+                                title="Shree Swami Samartha Pest Control Location"
                                 loading="lazy"
                                 referrerPolicy="no-referrer-when-downgrade"
                                 className="w-full h-full"
@@ -225,13 +229,13 @@ const Contact = () => {
             </section>
 
             {/* Quick Contact Section */}
-            <section className="py-24 bg-primary-950 text-white">
-                <div className="container mx-auto px-4 text-center">
+            <section className="py-24 bg-primary-950 text-white text-center">
+                <div className="container mx-auto px-4">
                     <h2 className="text-4xl md:text-6xl font-extrabold mb-8">
-                        Need Immediate Assistance?
+                        Need Urgent Assistance?
                     </h2>
                     <p className="text-2xl md:text-3xl mb-12 max-w-3xl mx-auto text-primary-200 font-medium">
-                        Call us now for urgent pest control services
+                        Contact us now for immediate pest control support across Pune.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-6 justify-center">
                         <a
@@ -243,7 +247,7 @@ const Contact = () => {
                         </a>
                         <a
                             href="tel:9529628158"
-                            className="btn-secondary border-white text-primary-900 hover:bg-white hover:text-primary-900 text-xl px-10 py-5 inline-flex items-center justify-center space-x-3"
+                            className="btn-secondary bg-white text-primary-900 hover:bg-primary-50 border-none text-xl px-10 py-5 inline-flex items-center justify-center space-x-3"
                         >
                             <FaPhone />
                             <span>9529628158</span>
@@ -256,3 +260,4 @@ const Contact = () => {
 };
 
 export default Contact;
+

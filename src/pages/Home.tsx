@@ -92,13 +92,49 @@ const Home = () => {
     },
   ];
 
+  const faqItems = [
+    {
+      question: "What is the cost of pest control in Pune?",
+      answer: "The cost of pest control in Pune varies depending on the type of service, the size of your property, and the severity of the infestation. At Shree Swami Samartha, we provide affordable and transparent pricing starting from competitive rates for residential apartments."
+    },
+    {
+      question: "Which is the best pest control service in Pune?",
+      answer: "Shree Swami Samartha Pest Control is highly rated for its professional expertise, 20+ years of combined experience, and eco-friendly solutions. We serve major areas like Hadapsar, Kharadi, Wagholi, and Mundhwa."
+    },
+    {
+      question: "Are your pest control treatments safe for pets and children?",
+      answer: "Yes, we use government-approved (CIB&RC), eco-friendly, and odorless chemicals that are safe for your family and pets. We follow strict safety protocols to ensure a hazard-free environment."
+    },
+    {
+      question: "How long does a typical pest control treatment take?",
+      answer: "A standard residential treatment usually takes between 45 to 90 minutes. However, advanced treatments like termite management or heavy cockroach infestations may take longer."
+    },
+    {
+      question: "Do you provide a warranty for your services?",
+      answer: "Yes, we offer service warranties ranging from 4 months to 5 years, depending on the type of treatment (e.g., termite control has longer warranties). If the pests return during the warranty period, we provide free re-treatment."
+    }
+  ];
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqItems.map(item => ({
+      "@type": "Question",
+      "name": item.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": item.answer
+      }
+    }))
+  };
 
   return (
     <div className="min-h-screen bg-[#FDFCF9]">
       <SEO
-        title="Best Pest Control Services in Pune | #1 Exterminator & Termite Treatment"
-        description="Shree Swami Samartha Pest Control offers professional, eco-friendly pest control services in Pune. Certified experts in cockroach, termite, bed bug, and rodent control for homes and businesses. Serving Hadapsar, Kharadi, Mundhwa, and Wagholi."
+        title="Best Pest Control in Pune | Professional Exterminator Services"
+        description="Providing the best pest control in Pune. Experts in termite, cockroach, and rodent control for homes and businesses. Serving Hadapsar, Kharadi, Wagholi, and Mundhwa."
         keywords="pest control pune, best pest control in pune, termite treatment pune, cockroach control pune, bed bug treatment, rodent control, fogging services pune, residential pest control, commercial pest control pune, herbal pest control pune, organic pest control, exterminator pune, Hadapsar, Kharadi, Magarpatta, Wagholi, Mundhwa, Amanora, Viman Nagar, Kalyani Nagar"
+        additionalSchema={[faqSchema]}
       />
       {/* Hero Section with Carousel */}
       <section className="container mx-auto px-4 pt-8 pb-12">
@@ -146,7 +182,7 @@ const Home = () => {
               <div className="relative group overflow-hidden rounded-3xl shadow-2xl">
                 <img
                   src="/home2.png"
-                  alt="Give your home in safe hands"
+                  alt="Professional Pest Control Services in Pune"
                   className="w-full h-[360px] object-cover transform group-hover:scale-105 transition-transform duration-700"
                 />
               </div>
@@ -159,7 +195,7 @@ const Home = () => {
       <section className="py-24 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
-            <h2 className="section-title text-center">About Us</h2>
+            <h2 className="section-title text-center">About Shree Swami Samartha Pest Control</h2>
             <div className="bg-[#FDFCF9] rounded-3xl shadow-xl p-10 md:p-16 border border-primary-100">
               <p className="text-xl md:text-2xl text-primary-800 leading-relaxed mb-8 font-medium">
                 Shree Swami Samartha, a Pest Control Company established in
@@ -194,7 +230,7 @@ const Home = () => {
             {/* Vision */}
             <div className="card p-12 border-t-8 border-primary-700 hover:border-primary-900">
               <div className="w-20 h-20 bg-primary-700 rounded-full flex items-center justify-center mb-8 shadow-lg">
-                <img src="/our_vision.jpeg" alt="" className="w-full h-full object-cover rounded-full" />
+                <img src="/our_vision.jpeg" alt="Our Vision for Pest Free Pune" className="w-full h-full object-cover rounded-full" />
               </div>
               <h3 className="text-4xl font-bold mb-6 text-primary-900">
                 Our Vision
@@ -209,7 +245,7 @@ const Home = () => {
             {/* Mission */}
             <div className="card p-12 border-t-8 border-primary-500 hover:border-primary-700">
               <div className="w-20 h-20 bg-primary-500 rounded-full flex items-center justify-center mb-8 shadow-lg">
-                <img src="/our_mission.jpeg" alt="" className="w-full h-full object-cover rounded-full" />
+                <img src="/our_mission.jpeg" alt="Our Mission to Provide Safe Environment" className="w-full h-full object-cover rounded-full" />
               </div>
               <h3 className="text-4xl font-bold mb-6 text-primary-900">
                 Our Mission
@@ -227,10 +263,9 @@ const Home = () => {
       {/* Partners Section */}
       <section className="py-24 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="section-title text-center">Meet the Partners</h2>
+          <h2 className="section-title text-center">Meet Our Experienced Partners</h2>
           <p className="text-center text-xl text-primary-600 mb-16 max-w-3xl mx-auto font-medium">
-            Our experienced leadership team brings together expertise in
-            business administration and hands-on pest control services.
+            Our leadership team combines business excellence with deep technical expertise in pest management services.
           </p>
 
           <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
@@ -239,7 +274,7 @@ const Home = () => {
               <img
                 src="/rohini.jpeg"
                 className="w-48 h-48 object-cover rounded-full mx-auto mb-8 border-4 border-white shadow-xl"
-                alt="Rohini Gaikwad"
+                alt="Rohini Gaikwad - Partner at Shree Swami Samartha Pest Control"
               />
               <h3 className="text-3xl font-bold mb-3 text-primary-900">
                 Rohini Gaikwad
@@ -258,7 +293,7 @@ const Home = () => {
               <img
                 src="/ravi.jpeg"
                 className="w-48 h-48 object-cover rounded-full mx-auto mb-8 border-4 border-white shadow-xl"
-                alt="Ravindra Bagal"
+                alt="Ravindra Bagal - Partner & Technical Expert"
               />
               <h3 className="text-3xl font-bold mb-3 text-primary-900">
                 Ravindra Bagal
@@ -357,8 +392,9 @@ const Home = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
 
+
+      {/* CTA Section */}
       <section className="py-24 bg-primary-950 text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-5xl md:text-7xl font-extrabold mb-8">
@@ -378,3 +414,4 @@ const Home = () => {
 };
 
 export default Home;
+

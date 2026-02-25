@@ -6,31 +6,30 @@ const Gallery = () => {
     const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
     const images = [
-        { src: '/carousel-1.png', alt: 'Pest Control Service 1', category: 'Pest Control' },
-        { src: '/carousel-2.png', alt: 'Fogging Service', category: 'Fogging' },
-        // Add more placeholder images as needed
-        { src: 'https://via.placeholder.com/600x400?text=Service+4', alt: 'Service 4', category: 'Pest Control' },
-        { src: 'https://via.placeholder.com/600x400?text=Service+6', alt: 'Service 6', category: 'Fogging' },
+        { src: '/image1.jpeg', alt: 'Professional Cockroach Treatment in Pune', category: 'Cockroach Control' },
+        { src: '/fogging.jpeg', alt: 'Industrial Fogging Service in Pune', category: 'Fogging' },
+        { src: '/image3.jpg', alt: 'Termite Protection Service', category: 'Termite Control' },
+        { src: '/image5.jpeg', alt: 'Residential General Pest Control', category: 'General Pest Control' },
     ];
 
     const videos = [
-        { src: 'https://www.youtube.com/embed/dQw4w9WgXcQ', title: 'Pest Control Process', thumbnail: 'https://via.placeholder.com/600x400?text=Video+1' },
-        { src: 'https://www.youtube.com/embed/dQw4w9WgXcQ', title: 'Customer Testimonial', thumbnail: 'https://via.placeholder.com/600x400?text=Video+3' },
+        { src: 'https://rr3---sn-2ocvhc-5n.googlevideo.com/videoplayback?expire=1772026101&ei=1dyeab2XA56_88EPmNTjkQU&ip=2401:4900:8924:51df:9b40:bd86:1e6d:f3ed&id=221155fd6c2ad687&itag=18&source=contrib_service_geo_ugc&begin=0&requiressl=yes&xpc=EghoqJzIP3oBAQ==&met=1772018901,&mh=le&mm=32&mn=sn-2ocvhc-5n&ms=su&mv=m&mvi=3&pl=51&rms=su,su&sc=yes&susc=gugc&app=fife&ic=1061&eaua=iCDlJm1P4KI&pcm2=yes&mime=video/mp4&vprv=1&rqh=1&dur=17.368&lmt=1770154742544564&mt=1772018445&txp=0000224&sparams=expire,ei,ip,id,itag,source,requiressl,xpc,susc,app,ic,eaua,pcm2,mime,vprv,rqh,dur,lmt&sig=AJEij0EwRgIhALQzSXpMcQ2VX5itrBwm9Woe8G4dEhmxAYfAhwN3PcKhAiEAomyu99P2PO3zXsuqq9zeJtodz9MsYWtclpOjtO1B7v0=&lsparams=met,mh,mm,mn,ms,mv,mvi,pl,rms,sc&lsig=APaTxxMwRAIgTea2_LKhCmgAeJ5Dq-fKDUpSMvvY9WFbM4JuF3FppecCIGfHjyyopJH3UNKeNSQ7ol_HjFycElct-lfhNGpINmXJ', thumbnail: 'https://via.placeholder.com/600x400?text=Process+Video' },
+        { src: 'https://rr5---sn-cvh7knek.googlevideo.com/videoplayback?expire=1772025985&ei=YdyeaeCvMsmcssUPrN2foQo&ip=2401:4900:8924:51df:9b40:bd86:1e6d:f3ed&id=e37523656f229b99&itag=18&source=picasa&begin=0&requiressl=yes&xpc=Eghoy-b0JXoBAQ==&met=1772018785,&mh=CM&mm=32&mn=sn-cvh7knek&ms=su&mv=m&mvi=5&pl=51&rms=su,su&sc=yes&susc=ph&app=fife&ic=945&pcm2=yes&mime=video/mp4&vprv=1&prv=1&rqh=1&dur=42.956&lmt=1735737013306718&mt=1772018445&txp=0000224&sparams=expire,ei,ip,id,itag,source,requiressl,xpc,susc,app,ic,pcm2,mime,vprv,prv,rqh,dur,lmt&sig=AJEij0EwRgIhAPlPWSEh0qP3ykIHtnpKc-TkMl2EVg5AxkXKCcgoyHCTAiEA0_IWf3MhcCFit2s0J_SPtQkZoieIsSeuiPCIYQHsGZY=&lsparams=met,mh,mm,mn,ms,mv,mvi,pl,rms,sc&lsig=APaTxxMwRAIgYy6pB07rxop2MQExSSlgt0TEKub18RJJP9KnCl-yJyECICF7VZG4rsiJAkGnBNAoCayhaM1H_15tXdU4mpdvxR86', title: 'Why Clients Trust Shree Swami Samartha', thumbnail: 'https://via.placeholder.com/600x400?text=Trust+Video' },
     ];
 
     return (
         <div className="min-h-screen bg-[#FDFCF9]">
             <SEO
-                title="Service Gallery | Shree Swami Samartha Pest Control"
-                description="View our gallery of pest control and fogging services in Pune. See our expert team in action and the quality results we deliver to our clients."
-                keywords="pest control gallery, fogging service photos, pest control videos, shree swami samartha projects"
+                title="Service Gallery | Professional Extermination in Action"
+                description="See our Pune pest control teams in action. Browse photos and videos of our residential, commercial, and industrial pest management projects."
+                keywords="pest control gallery, fogging service photos, pest control videos, shree swami samartha projects, professional exterminators pune"
             />
             {/* Hero Section */}
             <section className="relative py-24 bg-primary-900 text-white overflow-hidden">
                 <div className="relative container mx-auto px-4 text-center">
-                    <h1 className="text-6xl md:text-7xl font-extrabold mb-6 tracking-tight">Our Gallery</h1>
+                    <h1 className="text-6xl md:text-7xl font-extrabold mb-6 tracking-tight">Our Service Gallery</h1>
                     <p className="text-2xl md:text-3xl max-w-4xl mx-auto font-medium text-primary-100">
-                        A visual tour of our professional services and successful projects
+                        A visual portfolio of our pest management excellence and dedicated field team.
                     </p>
                 </div>
             </section>
@@ -38,7 +37,7 @@ const Gallery = () => {
             {/* Image Gallery */}
             <section className="py-24 bg-white">
                 <div className="container mx-auto px-4">
-                    <h2 className="section-title text-center mb-16">Service Highlights</h2>
+                    <h2 className="section-title text-center mb-16 text-primary-900 text-4xl font-bold uppercase">Work Highlights</h2>
 
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {images.map((img, index) => (
@@ -50,9 +49,9 @@ const Gallery = () => {
                                 <img
                                     src={img.src}
                                     alt={img.alt}
-                                    className="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-500"
+                                    className="w-full h-64 object-cover"
                                 />
-                                <div className="absolute inset-0 bg-primary-900 bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <div className="absolute inset-0 bg-primary-900 bg-opacity-40 opacity-0  duration-300 flex items-center justify-center">
                                     <div className="text-white text-center">
                                         <FaImage className="text-4xl mx-auto mb-2" />
                                         <p className="font-bold text-lg">{img.category}</p>
@@ -67,7 +66,7 @@ const Gallery = () => {
             {/* Video Gallery */}
             <section className="py-24 bg-[#FDFCF9]">
                 <div className="container mx-auto px-4">
-                    <h2 className="section-title text-center mb-16">Video Showcase</h2>
+                    <h2 className="section-title text-center mb-16 text-primary-900 text-4xl font-bold uppercase">Expertise in Motion</h2>
 
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {videos.map((video, index) => (
@@ -119,3 +118,4 @@ const Gallery = () => {
 };
 
 export default Gallery;
+

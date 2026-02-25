@@ -25,26 +25,38 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               <a
-                href="#"
+                href="https://facebook.com/shreeswamisamarthapestcontrol"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-primary-900 hover:bg-white hover:text-primary-900 flex items-center justify-center transition-all duration-300"
+                aria-label="Facebook"
               >
                 <FaFacebook />
               </a>
               <a
-                href="#"
+                href="https://twitter.com/shreeswamisamartha"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-primary-900 hover:bg-white hover:text-primary-900 flex items-center justify-center transition-all duration-300"
+                aria-label="Twitter"
               >
                 <FaTwitter />
               </a>
               <a
-                href="#"
+                href="https://instagram.com/shreeswamisamarthapestcontrol"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-primary-900 hover:bg-white hover:text-primary-900 flex items-center justify-center transition-all duration-300"
+                aria-label="Instagram"
               >
                 <FaInstagram />
               </a>
               <a
-                href="#"
+                href="https://linkedin.com/company/shree-swami-samartha-pest-control"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-primary-900 hover:bg-white hover:text-primary-900 flex items-center justify-center transition-all duration-300"
+                aria-label="LinkedIn"
               >
                 <FaLinkedin />
               </a>

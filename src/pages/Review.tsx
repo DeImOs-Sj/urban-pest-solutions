@@ -22,13 +22,13 @@ const Review = () => {
         {
             name: 'Rajesh Patel',
             rating: 5,
-            review: 'Very satisfied with the peset control service. They were punctual and did an amazing job. Highly recommended!',
+            review: 'Very satisfied with the pest control service. They were punctual and did an amazing job. Highly recommended!',
             date: '1 month ago',
         },
         {
             name: 'Anita Desai',
             rating: 4,
-            review: 'Good service overall. The technician was knowledgeable and explained everything clearly.',
+            review: 'Good service overall. The tech was knowledgeable and explained the process carefully.',
             date: '1 month ago',
         },
         {
@@ -72,7 +72,7 @@ const Review = () => {
         return [...Array(5)].map((_, index) => (
             <FaStar
                 key={index}
-                className={`${index < rating ? 'text-primary-500' : 'text-primary-200'} text-xl`}
+                className={`${index < rating ? 'text-accent-400' : 'text-primary-200'} text-xl`}
             />
         ));
     };
@@ -81,16 +81,16 @@ const Review = () => {
     return (
         <div className="min-h-screen bg-[#FDFCF9]">
             <SEO
-                title="Customer Reviews | Shree Swami Samartha Pest Control"
-                description="Read reviews from our satisfied customers in Pune. See why Shree Swami Samartha Pest Control is the top choice for residential and commercial pest management."
-                keywords="pest control reviews pune, customer testimonials, best pest control feedback, shree swami samartha reviews"
+                title="Customer Reviews | Rated 4.9/5 for Pune Pest Control"
+                description="Read why hundreds of Pune homeowners trust Shree Swami Samartha. Verified customer reviews for cockroach, termite, and mosquito services."
+                keywords="pest control reviews pune, customer testimonials, best pest control feedback, shree swami samartha reviews, top rated exterminators pune"
             />
             {/* Hero Section */}
             <section className="relative py-24 bg-primary-900 text-white overflow-hidden">
                 <div className="relative container mx-auto px-4 text-center">
-                    <h1 className="text-6xl md:text-7xl font-extrabold mb-6 tracking-tight">Customer Reviews</h1>
+                    <h1 className="text-6xl md:text-7xl font-extrabold mb-6 tracking-tight">Client Testimonials</h1>
                     <p className="text-2xl md:text-3xl max-w-4xl mx-auto font-medium text-primary-100">
-                        See what our satisfied customers have to say about our services
+                        Honest feedback from residential and commercial clients across Pune.
                     </p>
                 </div>
             </section>
@@ -99,14 +99,14 @@ const Review = () => {
             <section className="py-24 bg-white">
                 <div className="container mx-auto px-4">
                     <div className="max-w-5xl mx-auto bg-[#FDFCF9] rounded-3xl shadow-xl p-10 md:p-14 text-center border border-primary-100">
-                        <h2 className="text-4xl font-bold mb-8 text-primary-900">Overall Rating</h2>
-                        <div className="flex items-center justify-center mb-6">
-                            <span className="text-7xl font-extrabold text-primary-900 mr-6">4.9</span>
+                        <h2 className="text-4xl font-bold mb-8 text-primary-900">Our Reputation</h2>
+                        <div className="flex flex-col md:flex-row items-center justify-center mb-6">
+                            <span className="text-7xl font-extrabold text-primary-900 md:mr-6 mb-4 md:mb-0">4.9 / 5</span>
                             <div>
-                                <div className="flex mb-3">
+                                <div className="flex justify-center mb-3">
                                     {renderStars(Math.round(4.9))}
                                 </div>
-                                <p className="text-xl text-primary-600 font-medium">Based on 512 reviews</p>
+                                <p className="text-xl text-primary-600 font-medium">Based on 500+ Local Pune Reviews</p>
                             </div>
                         </div>
                     </div>
@@ -116,11 +116,11 @@ const Review = () => {
             {/* Reviews Grid */}
             <section className="py-24 bg-[#FDFCF9]">
                 <div className="container mx-auto px-4">
-                    <h2 className="section-title text-center mb-16">What Our Customers Say</h2>
+                    <h2 className="section-title text-center mb-16 text-primary-900 text-4xl font-bold uppercase">Success Stories</h2>
 
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto mb-20">
                         {existingReviews.map((review, index) => (
-                            <div key={index} className="card p-8 hover:scale-105 border border-primary-200 bg-white">
+                            <article key={index} className="card p-8 hover:scale-105 border border-primary-200 bg-white">
                                 <div className="flex items-center mb-6">
                                     <div className="w-14 h-14 bg-primary-900 rounded-full flex items-center justify-center text-white mr-4 shadow-lg">
                                         <FaUser className="text-2xl" />
@@ -136,10 +136,10 @@ const Review = () => {
                                 </div>
 
                                 <div className="relative">
-                                    <FaQuoteLeft className="absolute -top-3 -left-2 text-primary-200 text-3xl" />
-                                    <p className="text-primary-700 leading-relaxed pl-8 text-lg font-medium">{review.review}</p>
+                                    <FaQuoteLeft className="absolute -top-3 -left-2 text-primary-100 text-3xl" />
+                                    <p className="text-primary-700 leading-relaxed pl-8 text-lg font-medium italic">"{review.review}"</p>
                                 </div>
-                            </div>
+                            </article>
                         ))}
                     </div>
                 </div>
@@ -149,9 +149,9 @@ const Review = () => {
             <section className="py-24 bg-white">
                 <div className="container mx-auto px-4">
                     <div className="max-w-4xl mx-auto">
-                        <h2 className="section-title text-center mb-6">Share Your Experience</h2>
-                        <p className="section-subtitle text-center mb-16 text-2xl">
-                            We'd love to hear about your experience with our services
+                        <h2 className="section-title text-center mb-6 text-primary-900 text-4xl font-bold">Leave a Review</h2>
+                        <p className="section-subtitle text-center mb-16 text-2xl text-primary-600">
+                            Your feedback helps us maintain the highest standards of pest management.
                         </p>
 
                         <div className="bg-[#FDFCF9] rounded-3xl shadow-xl p-10 md:p-14 border border-primary-100">
@@ -162,8 +162,8 @@ const Review = () => {
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                                         </svg>
                                     </div>
-                                    <h3 className="text-2xl font-bold text-green-700 mb-2">Thank You for Your Feedback!</h3>
-                                    <p className="text-primary-700 font-medium">Your review has been submitted successfully.</p>
+                                    <h4 className="text-2xl font-bold text-green-700 mb-2">Review Submitted!</h4>
+                                    <p className="text-primary-700 font-medium">Thank you for sharing your experience with us.</p>
                                 </div>
                             ) : (
                                 <form onSubmit={handleSubmit} className="space-y-8">
@@ -180,7 +180,7 @@ const Review = () => {
                                                 value={formData.name}
                                                 onChange={handleChange}
                                                 className="w-full px-6 py-4 border-2 border-primary-200 rounded-xl focus:border-primary-900 focus:outline-none transition-colors text-lg bg-white"
-                                                placeholder="John Doe"
+                                                placeholder="Name"
                                             />
                                         </div>
 
@@ -196,14 +196,14 @@ const Review = () => {
                                                 value={formData.email}
                                                 onChange={handleChange}
                                                 className="w-full px-6 py-4 border-2 border-primary-200 rounded-xl focus:border-primary-900 focus:outline-none transition-colors text-lg bg-white"
-                                                placeholder="john@example.com"
+                                                placeholder="Email"
                                             />
                                         </div>
                                     </div>
 
                                     <div>
                                         <label htmlFor="rating" className="block text-lg font-bold text-primary-900 mb-2">
-                                            Rating *
+                                            Service Rating *
                                         </label>
                                         <select
                                             id="rating"
@@ -223,7 +223,7 @@ const Review = () => {
 
                                     <div>
                                         <label htmlFor="review" className="block text-lg font-bold text-primary-900 mb-2">
-                                            Your Review *
+                                            Describe your Experience *
                                         </label>
                                         <textarea
                                             id="review"
@@ -233,7 +233,7 @@ const Review = () => {
                                             onChange={handleChange}
                                             rows={5}
                                             className="w-full px-6 py-4 border-2 border-primary-200 rounded-xl focus:border-primary-900 focus:outline-none transition-colors resize-none text-lg bg-white"
-                                            placeholder="Share your experience with our services..."
+                                            placeholder="What did you like about our pest control service?"
                                         ></textarea>
                                     </div>
 
@@ -241,7 +241,7 @@ const Review = () => {
                                         type="submit"
                                         className="w-full btn-primary flex items-center justify-center space-x-3 text-xl py-4"
                                     >
-                                        <span>Submit Review</span>
+                                        <span>Post Review</span>
                                         <FaStar />
                                     </button>
                                 </form>
@@ -252,16 +252,16 @@ const Review = () => {
             </section>
 
             {/* CTA Section */}
-            <section className="py-24 bg-primary-950 text-white">
-                <div className="container mx-auto px-4 text-center">
+            <section className="py-24 bg-primary-950 text-white text-center">
+                <div className="container mx-auto px-4">
                     <h2 className="text-5xl md:text-7xl font-extrabold mb-8">
-                        Experience Our Quality Service
+                        Ready for a Pest-Free Space?
                     </h2>
                     <p className="text-2xl md:text-3xl mb-12 max-w-3xl mx-auto text-primary-200 font-medium">
-                        Join our satisfied customers and experience the difference
+                        Join our community of satisfied Pune clients.
                     </p>
                     <a href="/contact" className="btn-secondary bg-white text-primary-900 hover:bg-primary-50 border-none text-xl px-10 py-5">
-                        Book a Service
+                        Schedule an Inspection
                     </a>
                 </div>
             </section>
@@ -270,3 +270,4 @@ const Review = () => {
 };
 
 export default Review;
+
