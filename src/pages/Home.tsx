@@ -355,37 +355,45 @@ const Home = () => {
       <ClientCarousel />
 
       {/* Industry Resources Section */}
-      <section className="py-24 bg-white">
-        <div className="container mx-auto px-4">
+      <section className="py-24 relative overflow-hidden bg-primary-950">
+        {/* Background Image with Dark Overlay */}
+        <div
+          className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat bg-fixed"
+          style={{ backgroundImage: "url('/shaking_hands.jpg')" }}
+        >
+          <div className="absolute inset-0 bg-primary-950/70 backdrop-blur-[2px]" />
+        </div>
+
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-5xl mx-auto text-center">
-            <h2 className="text-4xl font-bold mb-12 text-primary-900">Industry Insights & Safety Standards</h2>
+            <h2 className="text-4xl font-bold mb-12 text-white">Industry Insights & Safety Standards</h2>
             <div className="grid md:grid-cols-3 gap-8">
               <a
                 href="http://ppqs.gov.in/divisions/cib-rc"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-8 rounded-2xl bg-primary-50 hover:bg-primary-100 transition-colors border border-primary-100 group"
+                className="p-8 rounded-2xl bg-white/10 backdrop-blur-md hover:bg-white/20 transition-all duration-300 border border-white/10 group shadow-sm hover:shadow-xl transform hover:-translate-y-1"
               >
-                <h3 className="text-xl font-bold mb-4 text-primary-900 group-hover:text-primary-700">CIB&RC India</h3>
-                <p className="text-primary-700 font-medium">Central Insecticides Board & Registration Committee guidelines for pesticide use in India.</p>
+                <h3 className="text-xl font-bold mb-4 text-white group-hover:text-primary-200">CIB&RC India</h3>
+                <p className="text-primary-100 font-medium italic">Central Insecticides Board & Registration Committee guidelines for pesticide use in India.</p>
               </a>
               <a
                 href="https://www.who.int/teams/control-of-neglected-tropical-diseases/vector-ecology-and-management/vector-control"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-8 rounded-2xl bg-primary-50 hover:bg-primary-100 transition-colors border border-primary-100 group"
+                className="p-8 rounded-2xl bg-white/10 backdrop-blur-md hover:bg-white/20 transition-all duration-300 border border-white/10 group shadow-sm hover:shadow-xl transform hover:-translate-y-1"
               >
-                <h3 className="text-xl font-bold mb-4 text-primary-900 group-hover:text-primary-700">WHO Standards</h3>
-                <p className="text-primary-700 font-medium">World Health Organization global standards for vector control and public health safety.</p>
+                <h3 className="text-xl font-bold mb-4 text-white group-hover:text-primary-200">WHO Standards</h3>
+                <p className="text-primary-100 font-medium italic">World Health Organization global standards for vector control and public health safety.</p>
               </a>
               <a
                 href="https://www.pestworld.org/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-8 rounded-2xl bg-primary-50 hover:bg-primary-100 transition-colors border border-primary-100 group"
+                className="p-8 rounded-2xl bg-white/10 backdrop-blur-md hover:bg-white/20 transition-all duration-300 border border-white/10 group shadow-sm hover:shadow-xl transform hover:-translate-y-1"
               >
-                <h3 className="text-xl font-bold mb-4 text-primary-900 group-hover:text-primary-700">PestWorld Tips</h3>
-                <p className="text-primary-700 font-medium">Professional insights and educational resources on pest management from NPMA.</p>
+                <h3 className="text-xl font-bold mb-4 text-white group-hover:text-primary-200">PestWorld Tips</h3>
+                <p className="text-primary-100 font-medium italic">Professional insights and educational resources on pest management from NPMA.</p>
               </a>
             </div>
           </div>
@@ -393,46 +401,54 @@ const Home = () => {
       </section>
 
       {/* What's New In Our Organization Section */}
-      <section className="py-24 bg-primary-50">
-        <div className="container mx-auto px-4">
+      <section className="py-24 relative overflow-hidden bg-primary-950">
+        {/* Background Image with Dark Overlay */}
+        <div
+          className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat bg-fixed"
+          style={{ backgroundImage: "url('/shaking_hands.jpg')" }}
+        >
+          <div className="absolute inset-0 bg-primary-950/70 backdrop-blur-[2px]" />
+        </div>
+
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-6xl mx-auto text-center">
-            <h2 className="text-4xl font-bold mb-6 text-primary-900">What's New In Our Organization</h2>
-            <p className="text-xl text-primary-700 mb-16 max-w-3xl mx-auto font-medium">
+            <h2 className="text-4xl font-bold mb-6 text-white">What's New In Our Organization</h2>
+            <p className="text-xl text-primary-100 mb-16 max-w-3xl mx-auto font-medium">
               We believe that a motivated and supported team is the backbone of our success. Here’s how we empower our organization.
             </p>
             <div className="grid md:grid-cols-3 gap-10">
-              <div className="bg-white p-10 rounded-3xl shadow-sm border border-primary-100 hover:shadow-md transition-shadow">
-                <div className="w-16 h-16 bg-primary-100 rounded-2xl flex items-center justify-center mb-8 mx-auto">
-                  <svg className="w-8 h-8 text-primary-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="bg-white/10 backdrop-blur-md p-10 rounded-3xl shadow-sm border border-white/10 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                <div className="w-16 h-16 bg-white/10 rounded-2xl flex items-center justify-center mb-8 mx-auto">
+                  <svg className="w-8 h-8 text-primary-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
                   </svg>
                 </div>
-                <h3 className="text-2xl font-bold mb-4 text-primary-900">Employee Empowerment</h3>
-                <p className="text-lg text-primary-700 leading-relaxed font-medium">
+                <h3 className="text-2xl font-bold mb-4 text-white">Employee Empowerment</h3>
+                <p className="text-lg text-primary-100 leading-relaxed font-medium">
                   We foster a growth-oriented environment through regular staff competitions, rewarding strengths and motivating our team to reach their full potential.
                 </p>
               </div>
 
-              <div className="bg-white p-10 rounded-3xl shadow-sm border border-primary-100 hover:shadow-md transition-shadow">
-                <div className="w-16 h-16 bg-primary-100 rounded-2xl flex items-center justify-center mb-8 mx-auto">
-                  <svg className="w-8 h-8 text-primary-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="bg-white/10 backdrop-blur-md p-10 rounded-3xl shadow-sm border border-white/10 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                <div className="w-16 h-16 bg-white/10 rounded-2xl flex items-center justify-center mb-8 mx-auto">
+                  <svg className="w-8 h-8 text-primary-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                   </svg>
                 </div>
-                <h3 className="text-2xl font-bold mb-4 text-primary-900">Holistic Support</h3>
-                <p className="text-lg text-primary-700 leading-relaxed font-medium">
+                <h3 className="text-2xl font-bold mb-4 text-white">Holistic Support</h3>
+                <p className="text-lg text-primary-100 leading-relaxed font-medium">
                   Beyond professional training, we provide comprehensive mental, moral, and financial support to ensure our staff thrives both personally and professionally.
                 </p>
               </div>
 
-              <div className="bg-white p-10 rounded-3xl shadow-sm border border-primary-100 hover:shadow-md transition-shadow">
-                <div className="w-16 h-16 bg-primary-100 rounded-2xl flex items-center justify-center mb-8 mx-auto">
-                  <svg className="w-8 h-8 text-primary-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="bg-white/10 backdrop-blur-md p-10 rounded-3xl shadow-sm border border-white/10 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                <div className="w-16 h-16 bg-white/10 rounded-2xl flex items-center justify-center mb-8 mx-auto">
+                  <svg className="w-8 h-8 text-primary-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                   </svg>
                 </div>
-                <h3 className="text-2xl font-bold mb-4 text-primary-900">Inclusive Culture</h3>
-                <p className="text-lg text-primary-700 leading-relaxed font-medium">
+                <h3 className="text-2xl font-bold mb-4 text-white">Inclusive Culture</h3>
+                <p className="text-lg text-primary-100 leading-relaxed font-medium">
                   We believe in the power of equality. Every employee is a valued pillar of our organization, contributing equally to our collective success.
                 </p>
               </div>
